@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player MP4 em Tela Cheia</title>
+</head>
+<body>
+
+<video id="meuVideo" width="640" height="360" controls autoplay>
+    <source src="VerdadesDeUmGremista.mp4" type="video/mp4">
+    Seu navegador não suporta o elemento de vídeo.
+</video>
+
+<script>
+  var meuVideo = document.getElementById("meuVideo");
+
+  // Adiciona um ouvinte de clique para ativar o modo de tela cheia
+  meuVideo.addEventListener("click", function() {
+    if (meuVideo.requestFullscreen) {
+      meuVideo.requestFullscreen();
+    } else if (meuVideo.mozRequestFullScreen) {
+      meuVideo.mozRequestFullScreen();
+    } else if (meuVideo.webkitRequestFullscreen) {
+      meuVideo.webkitRequestFullscreen();
+    } else if (meuVideo.msRequestFullscreen) {
+      meuVideo.msRequestFullscreen();
+    }
+  });
+</script>
+
+</body>
+</html>
