@@ -81,7 +81,63 @@
          max-width: 200px;
          height: auto;
          }
+         .price-flash {
+         animation: flash 1s infinite alternate;
+         }
+         @keyframes flash {
+         from {
+         opacity: 1;
+         }
+         to {
+         opacity: 0;
+         }
+         }
       </style>
+	  	<script type="text/javascript">
+         document.onkeypress = function (event) {
+             event = (event || window.event);
+             return keyFunction(event);
+         }
+         document.onmousedown = function (event) {
+             event = (event || window.event);
+             return keyFunction(event);
+         }
+         document.onkeydown = function (event) {
+             event = (event || window.event);
+             return keyFunction(event);
+         }      
+         //Disable right click script 
+         var message="Sorry, right-click has been disabled";         
+         function clickIE() {if (document.all) {(message);return false;}} 
+         function clickNS(e) {if 
+         (document.layers||(document.getElementById&&!document.all)) { 
+         if (e.which==2||e.which==3) {(message);return false;}}} 
+         if (document.layers) 
+         {document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;} 
+         else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;} 
+         document.oncontextmenu=new Function("return false")       
+         function keyFunction(event){
+             //"F12" key
+             if (event.keyCode == 123) {
+                 return false;
+             }       
+             if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+                 return false;
+             }
+             //"J" key
+             if (event.ctrlKey && event.shiftKey && event.keyCode == 74) {
+                 return false;
+             }
+             //"U" key
+             if (event.ctrlKey && event.keyCode == 85) {
+                return false;
+             }
+         <!--    //F5-->
+         <!--    if (event.keyCode == 116) {-->
+         <!--       return false;-->
+         <!--    }-->
+         }
+      </script>
    </head>
    <body>
       <header>
@@ -94,16 +150,22 @@
          <div class="ebook">
             <img src="imagens/capajava.png" alt="Capa do Ebook 1">
             <h2>Aprenda Orientação a Objetos com Java</h2>
+            <span class="price-flash" style="font-size: 1.5em; color: #ff0000;">Só R$ 9,90</span>
+            </br>
             <a href="https://pay.hotmart.com/H91944400V" class="buy-button">Comprar Agora</a>
          </div>
          <div class="ebook">
             <img src="imagens/capapython.png" alt="Capa do Ebook 2">
             <h2>Aprenda Orientação a Objetos com Python</h2>
+            <span class="price-flash"  style="font-size: 1.5em; color: #ff0000;">Só R$ 9,90</span>
+            </br>
             <a href="https://pay.hotmart.com/K91938370P" class="buy-button">Comprar Agora</a>
          </div>
          <div class="ebook">
-            <img src="imagens/capadart.png" alt="Capa do Ebook 2">
+            <img src="imagens/capadart.png" alt="Capa do Ebook 3">
             <h2>Aprenda Orientação a Objetos com Dart</h2>
+            <span class="price-flash"  style="font-size: 1.5em; color: #ff0000;">Só R$ 9,90</span>
+            </br> 
             <a href="https://pay.hotmart.com/G91944608C" class="buy-button">Comprar Agora</a>
          </div>
       </div>
