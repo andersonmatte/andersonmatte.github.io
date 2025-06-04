@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anderson Matte - Portfólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #121212, #1e1e1e);
+      color: #e0e0e0;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      position: fixed;
+      width: 100%;
+      z-index: 10;
+    }
+    .card {
+      background: #1e1e1e;
+      border-radius: 15px;
+      box-shadow: 0 8px 30px rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 40px rgba(255, 255, 255, 0.2);
+    }
+    .section-title {
+      color: #ff6f61;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      position: relative;
+      display: inline-block;
+      margin-bottom: 2rem;
+    }
+    .section-title::after {
+      content: '';
+      width: 50%;
+      height: 3px;
+      background: #ff6f61;
+      position: absolute;
+      bottom: -5px;
+      left: 25%;
+    }
+    .btn {
+      background: #ff6f61;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 50px;
+      font-weight: 500;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    .btn:hover {
+      background: #e65b50;
+      transform: scale(1.05);
+    }
+    .hero {
+      background: url('https://source.unsplash.com/random/1920x1080/?programming') no-repeat center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+    }
+    .hero-card {
+      background: rgba(30, 30, 30, 0.8);
+      border-radius: 15px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 8px 30px rgba(255, 255, 255, 0.1);
+      margin-bottom: 20px;
+    }
+    .hero-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #ff6f61;
+      margin-bottom: 20px;
+    }
+    .animate-slide-up {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: slideUp 0.5s ease forwards;
+    }
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    footer {
+      background: #1e1e1e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .section-bg {
+      background: #252525;
+    }
+    @media (max-width: 768px) {
+      .card, .hero-card {
+        margin: 10px;
+      }
+      .hero {
+        height: 80vh;
+      }
+      .hero-photo {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <h1 class="text-white text-2xl font-bold">Anderson Matte</h1>
+        <div class="flex items-center space-x-4">
+          <a href="#sobre" class="text-white hover:text-gray-300">Sobre</a>
+          <a href="#formacao" class="text-white hover:text-gray-300">Formação</a>
+          <a href="#projetos" class="text-white hover:text-gray-300">Projetos</a>
+          <a href="#contato" class="text-white hover:text-gray-300">Contato</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-card animate-slide-up">
+        <img src="imagens/andersonMatte.jpg" alt="Anderson Matte" class="hero-photo">
+        <h2 class="text-5xl sm:text-6xl font-bold mb-4">Anderson Matte</h2>
+        <p class="text-xl sm:text-2xl mb-6">Desenvolvedor | Líder Técnico | Educador</p>
+      </div>
+      <p class="text-lg max-w-2xl mx-auto mb-8 animate-slide-up" style="animation-delay: 0.2s;">
+        Transformando ideias em soluções tecnológicas com mais de 15 anos de experiência e paixão por inovação.
+      </p>
+      <a href="#contato" class="btn animate-slide-up" style="animation-delay: 0.4s;">Entre em Contato</a>
+    </div>
+  </section>
+
+  <!-- Sobre Section -->
+  <section id="sobre" class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="section-title text-3xl text-center">Sobre Mim</h2>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="md:w-1/2 animate-slide-up">
+          <p class="text-lg">
+            Com mais de 15 anos de experiência em tecnologia, sou especialista em desenvolvimento de sistemas e aplicativos, com foco em liderança técnica e entrega de soluções escaláveis.
+          </p>
+          <p class="text-lg mt-4">
+            Minhas principais tecnologias incluem <strong>Java, Android, Flutter, Ionic e Angular</strong>. Sou apaixonado por liderar equipes, ensinar e transformar conhecimento em valor.
+          </p>
+        </div>
+        <div class="md:w-1/2 animate-slide-up" style="animation-delay: 0.2s;">
+          <div class="card p-6">
+            <h3 class="text-xl font-semibold mb-4">Destaques da Carreira</h3>
+            <ul class="list-disc list-inside">
+              <li>Liderança de times multidisciplinares</li>
+              <li>Soluções eficientes e escaláveis</li>
+              <li>Paixão por ensino e inovação</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formação Section -->
+  <section id="formacao" class="py-16 section-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="section-title text-3xl text-center">Formação Acadêmica</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card p-6 animate-slide-up">
+          <h3 class="text-xl font-semibold">Pós-graduação</h3>
+          <p>Arquitetura de Software</p>
+        </div>
+        <div class="card p-6 animate-slide-up" style="animation-delay: 0.1s;">
+          <h3 class="text-xl font-semibold">Pós-graduação</h3>
+          <p>Arquitetura de Soluções</p>
+        </div>
+        <div class="card p-6 animate-slide-up" style="animation-delay: 0.2s;">
+          <h3 class="text-xl font-semibold">Pós-graduação</h3>
+          <p>Data Science</p>
+        </div>
+        <div class="card p-6 animate-slide-up" style="animation-delay: 0.3s;">
+          <h3 class="text-xl font-semibold">Pós-graduação</h3>
+          <p>Docência do Ensino Superior</p>
+        </div>
+        <div class="card p-6 animate-slide-up" style="animation-delay: 0.4s;">
+          <h3 class="text-xl font-semibold">Pós-graduação</h3>
+          <p>Psicopedagogia</p>
+        </div>
+        <div class="card p-6 animate-slide-up" style="animation-delay: 0.5s;">
+          <h3 class="text-xl font-semibold">Graduação</h3>
+          <p>Análise e Desenvolvimento de Sistemas</p>
+        </div>
+        <div class="card p-6 animate-slide-up" style="animation-delay: 0.6s;">
+          <h3 class="text-xl font-semibold">Curso de Extensão</h3>
+          <p>Programação para Dispositivos Móveis</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos Section -->
+  <section id="projetos" class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="section-title text-3xl text-center">Projetos e Publicações</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="card p-6 animate-slide-up">
+          <h3 class="text-xl font-semibold mb-2">Pub.dev</h3>
+          <p class="mb-4">Pacotes Flutter publicados para a comunidade</p>
+          <a href="https://pub.dev/publishers/webmatte.com.br/packages" target="_blank" class="btn">Ver Pacotes</a>
+        </div>
+        <div class="card p-6 animate-slide-up" style="animation-delay: 0.1s;">
+          <h3 class="text-xl font-semibold mb-2">Play Store</h3>
+          <p class="mb-4">Aplicativos disponíveis na Google Play Store</p>
+          <a href="https://play.google.com/store/apps/dev?id=5375128912520051058" target="_blank" class="btn">Ver Apps</a>
+        </div>
+        <div class="card p-6 animate-slide-up" style="animation-delay: 0.2s;">
+          <h3 class="text-xl font-semibold mb-2">GitHub</h3>
+          <p class="mb-4">Projetos de código aberto e contribuições</p>
+          <a href="https://github.com/andersonmatte/" target="_blank" class="btn">Ver Repositórios</a>
+        </div>
+        <div class="card p-6 animate-slide-up" style="animation-delay: 0.3s;">
+          <h3 class="text-xl font-semibold mb-2">Medium</h3>
+          <p class="mb-4">Meus artigos publicados</p>
+          <a href="https://medium.com/@anderson.matte" target="_blank" class="btn">Ver Artigos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato Section -->
+  <section id="contato" class="py-16 section-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="section-title text-3xl">Entre em Contato</h2>
+      <p class="text-lg mb-6">Pronto para colaborar ou trocar ideias? Me encontre aqui:</p>
+      <div class="flex justify-center space-x-6">
+        <a href="https://www.linkedin.com/in/andersonmatte/" target="_blank" class="text-gray-300 hover:text-blue-600">
+          <i class="material-icons">link</i> LinkedIn
+        </a>
+        <a href="https://medium.com/@anderson.matte" target="_blank" class="text-gray-300 hover:text-blue-600">
+          <i class="material-icons">article</i> Medium
+        </a>
+        <a href="https://github.com/andersonmatte/" target="_blank" class="text-gray-300 hover:text-blue-600">
+          <i class="material-icons">code</i> GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Anderson Matte. Todos os direitos reservados. | <a href="https://webmatte.com.br" target="_blank" class="text-white hover:text-gray-300">webmatte.com.br</a></p>
+  </footer>
+
+  <script>
+    // Smooth scroll para links da navbar
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Animation on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-slide-up');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.animate-slide-up').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
