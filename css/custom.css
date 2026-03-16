@@ -1,0 +1,289 @@
+/* Webmatte Custom - Layout Saúde e Biotecnologia */
+/* Paleta: verde/teal (saúde) + azul escuro */
+
+:root {
+  --webmatte-primary: #0d9488;
+  --webmatte-primary-dark: #0f766e;
+  --webmatte-secondary: #1e3a5f;
+  --webmatte-light: #f0fdfa;
+  --webmatte-text: #334155;
+  --webmatte-muted: #64748b;
+}
+
+/* Fontes */
+body {
+  font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--webmatte-text);
+}
+
+h1, h2, h3, h4, h5, h6,
+.navbar-brand,
+.text-uppercase,
+.page-section-heading {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 600;
+}
+
+/* Menu - mais compacto e moderno */
+#mainNav {
+  background: rgba(30, 58, 95, 0.97) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#mainNav .navbar-brand {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+#mainNav .nav-link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding-top: 0.6rem !important;
+  padding-bottom: 0.6rem !important;
+  transition: color 0.2s ease;
+}
+
+#mainNav,
+#mainNav .navbar-brand,
+#mainNav .nav-link {
+  color: #fff !important;
+}
+
+#mainNav .nav-link:hover {
+  color: #99f6e4 !important;
+}
+
+/* Hero - cores atualizadas */
+.masthead {
+  background: linear-gradient(135deg, #1e3a5f 0%, #0f766e 100%) !important;
+}
+
+.masthead .masthead-heading,
+.masthead .masthead-subheading {
+  color: #e0f2fe !important;
+}
+
+/* Cards - bordas arredondadas, ícones em círculo */
+#services .card {
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+#services .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(13, 148, 136, 0.15) !important;
+  border-color: var(--webmatte-primary);
+}
+
+#services .card-body > div:first-child {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#services .card-body .fa-3x {
+  font-size: 1.75rem !important;
+  color: var(--webmatte-primary) !important;
+}
+
+#services .card-title {
+  color: var(--webmatte-secondary);
+  font-weight: 600;
+}
+
+/* Quem somos - nova paleta */
+#about {
+  background: linear-gradient(135deg, #1e3a5f 0%, #0f766e 100%) !important;
+  color: #e0f2fe !important;
+}
+
+#about .page-section-heading,
+#about h6,
+#about p,
+#about i {
+  color: #e0f2fe !important;
+}
+
+#about i {
+  opacity: 0.9;
+}
+
+/* Diferenciais */
+#diferenciais {
+  background: var(--webmatte-light) !important;
+}
+
+#diferenciais .fa-2x {
+  color: var(--webmatte-primary) !important;
+}
+
+#diferenciais h6 {
+  color: var(--webmatte-secondary);
+}
+
+/* FAQ */
+#faq .accordion-item {
+  border-radius: 12px;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+#faq .accordion-button {
+  font-weight: 600;
+  color: var(--webmatte-secondary);
+  background: #fff;
+}
+
+#faq .accordion-button:not(.collapsed) {
+  background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%);
+  color: var(--webmatte-primary-dark);
+  box-shadow: none;
+}
+
+#faq .accordion-button:focus {
+  box-shadow: none;
+  border-color: var(--webmatte-primary);
+}
+
+/* Seções - espaçamento */
+#services, #about, #diferenciais, #faq, #contact {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* Títulos das seções */
+.page-section-heading {
+  color: var(--webmatte-secondary) !important;
+  letter-spacing: 0.05em;
+}
+
+.divider-custom .divider-custom-line {
+  background-color: var(--webmatte-primary);
+}
+
+.divider-custom .divider-custom-icon {
+  color: var(--webmatte-primary);
+}
+
+/* Botões */
+.btn-primary {
+  background: var(--webmatte-primary) !important;
+  border-color: var(--webmatte-primary) !important;
+  border-radius: 12px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: var(--webmatte-primary-dark) !important;
+  border-color: var(--webmatte-primary-dark) !important;
+  transform: translateY(-1px);
+}
+
+/* Contato - estilo BioCode Jr. (duas colunas: endereço/contatos | formulário) */
+.contact-section {
+  background: var(--webmatte-light);
+}
+
+.contact-block-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--webmatte-secondary);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.contact-text {
+  color: var(--webmatte-text);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.contact-text a {
+  color: var(--webmatte-primary);
+  text-decoration: none;
+}
+
+.contact-text a:hover {
+  color: var(--webmatte-primary-dark);
+  text-decoration: underline;
+}
+
+.contact-form-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--webmatte-secondary);
+  margin-bottom: 1.5rem;
+}
+
+/* Formulário - inputs simples com placeholder (estilo BioCode) */
+.form-control-contact {
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  padding: 0.7rem 1rem;
+  font-size: 0.95rem;
+  background: #fff;
+}
+
+.form-control-contact:focus {
+  border-color: var(--webmatte-primary);
+  box-shadow: 0 0 0 2px rgba(13, 148, 136, 0.15);
+  outline: none;
+}
+
+.form-control-contact::placeholder {
+  color: var(--webmatte-muted);
+}
+
+.btn-contact {
+  padding: 0.6rem 1.75rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+#formMessage.alert-success {
+  background: #f0fdfa;
+  border: 1px solid var(--webmatte-primary);
+  color: var(--webmatte-primary-dark);
+  border-radius: 8px;
+}
+
+#formMessage.alert-danger {
+  border-radius: 8px;
+}
+
+/* Rodapé */
+.footer {
+  background: var(--webmatte-secondary) !important;
+  padding: 3rem 0;
+  color: #94a3b8;
+}
+
+.footer h4 {
+  color: #e0f2fe;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.footer .lead {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+
+.copyright {
+  background: #0f172a !important;
+  padding: 1rem 0;
+}
