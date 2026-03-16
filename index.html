@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <meta name="description" content=""/>
-    <meta name="author" content=""/>
-    <title>Webmatte Soluções Web</title>
+    <meta name="description" content="Webmatte Soluções Web - Desenvolvimento de software (web, desktop, mobile) com foco em Bioinformática, Biotecnologia, Biomedicina, sistemas para saúde, integração RNDS e SUS Digital."/>
+    <meta name="author" content="Webmatte Soluções Web"/>
+    <meta name="keywords" content="bioinformática, biotecnologia, biomedicina, engenharia biomédica, RNDS, SUS Digital, sistemas saúde, desenvolvimento software"/>
+    <title>Webmatte Soluções Web | Tecnologia para Saúde e Biotecnologia</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
-          type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet"/>
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet"/>
+    <link href="css/custom.css" rel="stylesheet"/>
 	<script type="text/javascript">
          document.onkeypress = function (event) {
              event = (event || window.event);
@@ -41,9 +41,9 @@
          document.oncontextmenu=new Function("return false")       
          function keyFunction(event){
              //"F12" key
-             if (event.keyCode == 123) {
-                 return false;
-             }       
+             //if (event.keyCode == 123) {
+                 //return false;
+             //}       
              if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
                  return false;
              }
@@ -77,7 +77,7 @@
 </script>
 
 <!-- Navigation-->
-<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+<nav class="navbar navbar-expand-lg text-uppercase fixed-top" id="mainNav">
     <div class="container">
         <a class="navbar-brand" href="#page-top">Webmatte Soluções Web</a>
         <button class="navbar-toggler text-uppercase font-weight-bold text-white rounded" type="button"
@@ -88,12 +88,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Sobre</a>
-                </li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfólio</a>
-                </li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                                                     href="#contact">Contato</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#services">Serviços</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Quem somos</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#diferenciais">Diferenciais</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#faq">FAQ</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contato</a></li>
             </ul>
         </div>
     </div>
@@ -101,416 +100,254 @@
 <!-- Masthead-->
 <header class="masthead bg-primary text-white text-center">
     <div class="container d-flex align-items-center flex-column">
-        <!-- Masthead Avatar Image-->
-        <img style="width:60%; height:60%;" src="assets/img/dark_logo_transparent_background.png" alt="..."/>
-        <!-- Masthead Heading-->
-        <!--                <h2 class="masthead-heading mb-0" style="color: #000000;">Webmatte Soluções Web</h2>-->
-        <!-- Masthead Subheading-->
-        <p class="masthead-subheading font-weight-light mb-0" style="color:#2286c3;">SOMOS UMA EMPRESA DE SOLUÇÕES
-            DIGITAIS</p>
-        <p class="masthead-subheading font-weight-light mb-0" style="color:#2286c3;">DESENVOLVIMENTO MOBILE</p>
-        <p class="masthead-subheading font-weight-light mb-0" style="color:#2286c3;">DESENVOLVIMENTO WEB</p>
+        <img style="width:60%; max-width:280px;" src="assets/img/dark_logo_transparent_background.png" alt="Webmatte Soluções Web"/>
+        <h2 class="masthead-heading mb-3 mt-3" style="color:#2286c3; font-size:1.5rem;">Tecnologia a serviço da saúde e biotecnologia</h2>
+        <p class="masthead-subheading font-weight-light mb-0" style="color:#2286c3;">Desenvolvimento Web · Desktop · Mobile</p>
+        <p class="masthead-subheading font-weight-light mb-0" style="color:#2286c3; font-size:0.95rem;">Bioinformática · Biotecnologia · Biomedicina · Sistemas para Saúde · Integração RNDS · SUS Digital</p>
     </div>
 </header>
-<!-- Portfolio Section-->
-<section class="page-section portfolio" id="portfolio">
+<!-- Serviços Section-->
+<section class="page-section" id="services">
     <div class="container">
-        <!-- Portfolio Section Heading-->
-        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfólio</h2>
-		<br>
-		<p class="masthead-subheading font-weight-light mb-0" style="color:#000;">Confira abaixo alguns trabalhos realizados:</p>
-        <!-- Icon Divider-->
-        <div class="divider-custom">
-        </div>
-        <!-- Portfolio Grid Items-->
-        <div class="row justify-content-center">
-            <!-- Portfolio Item 1-->
-            <div class="col-md-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white"><i
-                                class="fas fa-plus fa-3x"></i></div>
-                    </div>
-                    <img class="img-fluid" src="assets/img/portfolio/sitepixdocurriculo.png" alt="..."/>
-                </div>
-            </div>
-            <!-- Portfolio Item 2-->
-            <div class="col-md-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white"><i
-                                class="fas fa-plus fa-3x"></i></div>
-                    </div>
-                    <img class="img-fluid" src="assets/img/portfolio/antoniosbarbershop.png" alt="..."/>
-                </div>
-            </div>
-            <!-- Portfolio Item 3-->
-            <div class="col-md-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white"><i
-                                class="fas fa-plus fa-3x"></i></div>
-                    </div>
-                    <img class="img-fluid" src="assets/img/portfolio/applibrasparatodos.png" alt="..."/>
-                </div>
-            </div>
-            <!-- Portfolio Item 4-->
-            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white"><i
-                                class="fas fa-plus fa-3x"></i></div>
-                    </div>
-                    <img class="img-fluid" src="assets/img/portfolio/vitormattedarocha.png" alt="..."/>
-                </div>
-            </div>
-            <!-- Portfolio Item 5-->
-            <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white"><i
-                                class="fas fa-plus fa-3x"></i></div>
-                    </div>
-                    <img class="img-fluid" src="assets/img/portfolio/italiamotutti.png" alt="..."/>
-                </div>
-            </div>
-            <!-- Portfolio Item 6-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">Serviços</h2>
+        <div class="divider-custom"></div>
+        <div class="row g-4">
             <div class="col-md-6 col-lg-4">
-                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white"><i
-                                class="fas fa-plus fa-3x"></i></div>
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3"><i class="fas fa-globe fa-3x text-primary"></i></div>
+                        <h5 class="card-title">Desenvolvimento Web</h5>
+                        <p class="card-text text-muted">Sites, portais e aplicações web voltadas à saúde, laboratórios e instituições biomédicas. Soluções responsivas e integradas.</p>
                     </div>
-                    <img class="img-fluid" src="assets/img/portfolio/tvitaliaplayer.png" alt="..."/>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3"><i class="fas fa-mobile-alt fa-3x text-primary"></i></div>
+                        <h5 class="card-title">Desenvolvimento Mobile</h5>
+                        <p class="card-text text-muted">Aplicativos iOS e Android para saúde, pesquisa e educação biomédica. Apps de coleta de dados e apoio ao atendimento.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3"><i class="fas fa-desktop fa-3x text-primary"></i></div>
+                        <h5 class="card-title">Desenvolvimento Desktop</h5>
+                        <p class="card-text text-muted">Sistemas para laboratórios, clínicas e gestão de dados. Software personalizado para equipamentos e workflows.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3"><i class="fas fa-hospital fa-3x text-primary"></i></div>
+                        <h5 class="card-title">Sistemas para Saúde</h5>
+                        <p class="card-text text-muted">Prontuários eletrônicos, gestão clínica e integração com equipamentos médicos e laboratoriais.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3"><i class="fas fa-link fa-3x text-primary"></i></div>
+                        <h5 class="card-title">Integração RNDS e SUS Digital</h5>
+                        <p class="card-text text-muted">Conexão com a Rede Nacional de Dados em Saúde e plataformas do SUS Digital. Conformidade e interoperabilidade.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3"><i class="fas fa-dna fa-3x text-primary"></i></div>
+                        <h5 class="card-title">Bioinformática e Biotecnologia</h5>
+                        <p class="card-text text-muted">Pipelines de análise, gestão de dados genômicos e soluções para pesquisa em ciências da vida.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mx-auto">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3"><i class="fas fa-search fa-3x text-primary"></i></div>
+                        <h5 class="card-title">Consultoria em TI</h5>
+                        <p class="card-text text-muted">Planejamento de projetos, tomada de decisões tecnológicas e acompanhamento para sua instituição se manter competitiva.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- About Section-->
-<section class="page-section bg-primary text-white mb-0" id="about">
+<!-- Quem somos Section-->
+<section class="page-section bg-primary text-white" id="about">
     <div class="container">
-        <!-- About Section Heading-->
-        <h2 class="page-section-heading text-center text-uppercase" style="color:#2286c3;">Sobre</h2>
-        <!-- About Section Content-->
-        <div class="divider-custom">
+        <h2 class="page-section-heading text-center text-uppercase mb-5" style="color:#2286c3;">Quem somos</h2>
+        <div class="divider-custom"></div>
+        <p class="lead text-center mb-5" style="color:#2286c3;">Somos uma empresa de desenvolvimento de software com foco em <strong>Informática em Saúde</strong>, <strong>Bioinformática</strong> e <strong>Biotecnologia</strong>. Atuamos nas áreas de Biomedicina, Engenharia Biomédica e sistemas integrados à RNDS e SUS Digital.</p>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-3">
+                <div class="text-center p-3">
+                    <i class="fas fa-bullseye fa-2x mb-2" style="color:#2286c3;"></i>
+                    <h6 class="text-uppercase mb-2" style="color:#2286c3;">Missão</h6>
+                    <p class="small mb-0" style="color:#2286c3;">Oferecer soluções de excelência em tecnologia para saúde e ciências da vida, promovendo inovação e qualidade.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="text-center p-3">
+                    <i class="fas fa-eye fa-2x mb-2" style="color:#2286c3;"></i>
+                    <h6 class="text-uppercase mb-2" style="color:#2286c3;">Visão</h6>
+                    <p class="small mb-0" style="color:#2286c3;">Ser referência em desenvolvimento de software para saúde e biotecnologia no Brasil.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="text-center p-3">
+                    <i class="fas fa-heart fa-2x mb-2" style="color:#2286c3;"></i>
+                    <h6 class="text-uppercase mb-2" style="color:#2286c3;">Valores</h6>
+                    <p class="small mb-0" style="color:#2286c3;">Ética, Qualidade, Inovação, Colaboração e Transparência.</p>
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-lg-4 ms-auto" style="color:#2286c3;"><p class="lead">Somos uma empresa de soluções digitais, desenvolvolvemos soluções mobile Android
-e também desenvolvemos soluções para Web.</p></div>
-            <div class="col-lg-4 me-auto" style="color:#2286c3;"><p class="lead">Localizada na cidade de Viamão, estamos aptos para fornecer para você o que há de melhor em tecnologia para Web e Android.</p></div>
-        </div>
-        
-          
-
     </div>
 </section>
-<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1"
-     aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-            <div class="modal-header border-0">
-                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body text-center pb-5">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <!-- Portfolio Modal - Title-->
-                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Pix Do
-                                Currículo</h2>
-                            <!-- Icon Divider-->
-                            <div class="divider-custom">
-                                <div class="divider-custom-line"></div>
-                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                <div class="divider-custom-line"></div>
-                            </div>
-                            <!-- Portfolio Modal - Image-->
-                            <img class="img-fluid rounded mb-5" src="assets/img/portfolio/sitepixdocurriculo.png" alt="..."/>
-                            <!-- Portfolio Modal - Text-->
-                            <p class="mb-4">O melhor App para ajudar quem está desempregado!
-                                Envie ou crie o seu currículo, que nós compartilharemos ele com empresas que estão contratando. É de graça!❤ Boa Sorte, não desista!</p>
-							<p><a href="https://play.google.com/store/apps/details?id=br.com.andersonmatte.pixdocurriculo">APP Pix Do Currículo</a></p>
-                            <p><a href="https://pixdocurriculo.github.io/">Site Pix Do Currículo</a></p>
-                            <button class="btn btn-primary" data-bs-dismiss="modal">
-                                <i class="fas fa-xmark fa-fw"></i>
-                                Fechar
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Portfolio Modal 2-->
-<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2"
-     aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-            <div class="modal-header border-0">
-                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body text-center pb-5">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <!-- Portfolio Modal - Title-->
-                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Antônio's
-                                Barbershop</h2>
-                            <!-- Icon Divider-->
-                            <div class="divider-custom">
-                                <div class="divider-custom-line"></div>
-                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                <div class="divider-custom-line"></div>
-                            </div>
-                            <!-- Portfolio Modal - Image-->
-                            <img class="img-fluid rounded mb-5" src="assets/img/portfolio/antoniosbarbershop.png"
-                                 alt="..."/>
-                            <!-- Portfolio Modal - Text-->
-                            <p class="mb-4">Localizada na Zona Sul de Porto Alegre Antônio's Barbershop traz para o
-                                mercado o que há de melhor para o seu cabelo e barba. Fundada em 2018, a Antônio's
-                                Barbershop já é destaque na cidade e conquista novos clientes a cada dia.
-
-                                Nossa missão é: "Proporcionar auto-estima e qualidade de vida aos nossos clientes".
-
-                                Oferecemos atendimento padrão sempre com excelência e agilidade, garantindo qualidade e
-                                satisfação dos nossos clientes.</p>
-							<p><a href="https://play.google.com/store/apps/details?id=br.com.andersonmatte.antoniosbarbershop">APP Antônio's Barbershop</a></p>
-                            <p><a href="https://antoniosbarbershop.github.io/">Site Antônio's Barbershop</a></p>
-                            <button class="btn btn-primary" data-bs-dismiss="modal">
-                                <i class="fas fa-xmark fa-fw"></i>
-                                Fechar
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Portfolio Modal 3-->
-<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3"
-     aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-            <div class="modal-header border-0">
-                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body text-center pb-5">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <!-- Portfolio Modal - Title-->
-                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Libras Para Todos</h2>
-                            <!-- Icon Divider-->
-                            <div class="divider-custom">
-                                <div class="divider-custom-line"></div>
-                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                <div class="divider-custom-line"></div>
-                            </div>
-                            <!-- Portfolio Modal - Image-->
-                            <img class="img-fluid rounded mb-5" src="assets/img/portfolio/applibrasparatodos.png" alt="..."/>
-                            <!-- Portfolio Modal - Text-->
-                            <p class="mb-4">Sobre o App
-                                Com o APP Libras Para Todos APP você poderá:
-
-                                Aprender o Alfabeto Manual
-                                Aprender os Números em Libras
-                                Terá acesso a mais de 5700 plavras em Libras com o auxílio do dicionário dentro do APP
-                                Terá a sua disposição um teclado de escrita em Libras, para poder treinar seus conhecimentos</p>
-                            <p><a href="https://play.google.com/store/apps/details?id=br.com.andersonmatte.librasparatodos">Libras Para Todos</a></p>
-                            <button class="btn btn-primary" data-bs-dismiss="modal">
-                                <i class="fas fa-xmark fa-fw"></i>
-                                Fechar
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Portfolio Modal 4-->
-<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4"
-     aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-            <div class="modal-header border-0">
-                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body text-center pb-5">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <!-- Portfolio Modal - Title-->
-                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Psicólogo <br>Vitor Matte da Rocha</h2>
-                            <!-- Icon Divider-->
-                            <div class="divider-custom">
-                                <div class="divider-custom-line"></div>
-                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                <div class="divider-custom-line"></div>
-                            </div>
-                            <!-- Portfolio Modal - Image-->
-                            <img class="img-fluid rounded mb-5" src="assets/img/portfolio/vitormattedarocha.png" alt="..."/>
-                            <!-- Portfolio Modal - Text-->
-                            <p class="mb-4">                           Meu nome é Vitor Matte da Rocha, psicólogo CRP 07/37007 formado pela universidade XYZ.<br> 
-                           Meu objetivo é ajudar as pessoas, e proporcionar alívio e bem-estar através do meu trabalho. <br>
-                           Com atendimento de qualidade em um ambiente acolhedor para auxiliar você.<br>
-                           Realizo atendimento para adolescentes, adultos e idosos. <br>
-                           Atendo presencialmente no centro de Porto Alegre.<br>
-                           Para maiores informações e agendamentos, entre em contato, obrigado!<br></p>
-						   <p><a href="https://vitormattedarocha.github.io/">Psicólogo Vitor Matte da Rocha</a></p>
-                            <button class="btn btn-primary" data-bs-dismiss="modal">
-                                <i class="fas fa-xmark fa-fw"></i>
-                                Fechar
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Portfolio Modal 5-->
-<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5"
-     aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-            <div class="modal-header border-0">
-                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body text-center pb-5">
-                <div class="container">
-                    <div class="row justify-content-center">
-					<div class="col-lg-8">
-                            <!-- Portfolio Modal - Title-->
-                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Curso Italiamo Tutti!</h2>
-                            <!-- Icon Divider-->
-                            <div class="divider-custom">
-                                <div class="divider-custom-line"></div>
-                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                <div class="divider-custom-line"></div>
-                            </div>
-                            <!-- Portfolio Modal - Image-->
-                            <img class="img-fluid rounded mb-5" src="assets/img/portfolio/italiamotutti.png" alt="..."/>
-                            <!-- Portfolio Modal - Text-->
-                            <p class="mb-4">Curso Italiamo Tutti!
-							
-							
-Com foco no ensino on-line, somos uma escola de ensino de Italiano.
-Contamos com profissionais qualificados e formados na área.
-Nosso materiais de estudos são próprios e desenvolvidos com extrema qualidade.
-Italiamo Tutti é muito mais do que um curso online!
-Oferecemos um aprendizado de qualidde para que você aprenda ou aprimore o seu nível de Italiano.
-Nossa escola destaca-se por oferecer diferencias como:</p>
-                            <p><a href="https://italiamotutti.github.io/">Italiamo Tutti</a></p>
-                            <button class="btn btn-primary" data-bs-dismiss="modal">
-                                <i class="fas fa-xmark fa-fw"></i>
-                                Fechar
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Portfolio Modal 6-->
-<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6"
-     aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-            <div class="modal-header border-0">
-                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body text-center pb-5">
-                <div class="container">
-                    <div class="row justify-content-center">
-					<div class="col-lg-8">
-                            <!-- Portfolio Modal - Title-->
-                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Site TV Italia Player</h2>
-                            <!-- Icon Divider-->
-                            <div class="divider-custom">
-                                <div class="divider-custom-line"></div>
-                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                <div class="divider-custom-line"></div>
-                            </div>
-                            <!-- Portfolio Modal - Image-->
-                            <img class="img-fluid rounded mb-5" src="assets/img/portfolio/tvitaliaplayer.png" alt="..."/>
-                            <!-- Portfolio Modal - Text-->
-                            <p class="mb-4">Sobre o TV Italia Player
-							
-							
-Tv Italia Player é para você que gosta de assistir conteúdo em italiano Para você que quer assistir conteúdo gratuito da Itália, agora é possível, com o app Tv Italia Player, assistir canais italianos, basta baixá-los e ter internet conexão.
-Apenas alguns canais estão disponíveis com base na geolocalização, alguns canais italianos não podem ser assistidos fora da Itália.
-Divirta-se!</p>
-                            <p><a href="https://tvitaliaplayer.github.io/">Tv Italia Player</a></p>
-                            <button class="btn btn-primary" data-bs-dismiss="modal">
-                                <i class="fas fa-xmark fa-fw"></i>
-                                Fechar
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<section class="page-section" id="contact">
+<!-- Diferenciais Section-->
+<section class="page-section bg-light" id="diferenciais">
     <div class="container">
-        <!-- Contact Section Heading-->
-        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Entre em contato</h2>
-        <!-- Icon Divider-->
-        <div class="divider-custom">
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">Diferenciais</h2>
+        <div class="divider-custom"></div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-3">
+                <div class="d-flex align-items-start">
+                    <i class="fas fa-shield-alt fa-2x text-primary me-3 mt-1"></i>
+                    <div>
+                        <h6>Integração RNDS</h6>
+                        <p class="small text-muted mb-0">Soluções compatíveis com a Rede Nacional de Dados em Saúde.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="d-flex align-items-start">
+                    <i class="fas fa-lock fa-2x text-primary me-3 mt-1"></i>
+                    <div>
+                        <h6>Conformidade LGPD</h6>
+                        <p class="small text-muted mb-0">Dados protegidos conforme a Lei Geral de Proteção de Dados.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="d-flex align-items-start">
+                    <i class="fas fa-mobile-alt fa-2x text-primary me-3 mt-1"></i>
+                    <div>
+                        <h6>SUS Digital</h6>
+                        <p class="small text-muted mb-0">Conectividade com plataformas e serviços do SUS Digital.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="d-flex align-items-start">
+                    <i class="fas fa-dna fa-2x text-primary me-3 mt-1"></i>
+                    <div>
+                        <h6>Especialização</h6>
+                        <p class="small text-muted mb-0">Experiência em Bioinformática, Biotecnologia e Saúde.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Contact Section Form-->
+    </div>
+</section>
+<!-- FAQ Section-->
+<section class="page-section" id="faq">
+    <div class="container">
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">Perguntas Frequentes</h2>
+        <div class="divider-custom"></div>
         <div class="row justify-content-center">
-            <div class="col-lg-8 col-xl-7">
-                <form id="contactForm" action="https://formsubmit.co/andersonmatte_18@hotmail.com" method="POST">
-                    <!-- Name input-->
-                    <div class="form-floating mb-3">
-                        <input class="form-control" id="name" type="text" placeholder="Informe seu nome..."
-                               data-sb-validations="required"/>
-                        <label for="name">Nome</label>
-                        <div class="invalid-feedback" data-sb-feedback="name:required">Nome é obrigatório.</div>
-                    </div>
-                    <!-- Email address input-->
-                    <div class="form-floating mb-3">
-                        <input class="form-control" id="email" type="email" placeholder="seuemail@example.com"
-                               data-sb-validations="required,email"/>
-                        <label for="email">Email</label>
-                        <div class="invalid-feedback" data-sb-feedback="email:required">Email é obrigatório.</div>
-                        <div class="invalid-feedback" data-sb-feedback="email:email">O email informado não é valido.
+            <div class="col-lg-8">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="faq1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">Vocês fazem integração com a RNDS?</button>
+                        </h3>
+                        <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Sim. Desenvolvemos soluções que se integram à Rede Nacional de Dados em Saúde (RNDS), permitindo interoperabilidade com o ecossistema de saúde digital do Brasil.</div>
                         </div>
                     </div>
-                    <!-- Phone number input-->
-                    <div class="form-floating mb-3">
-                        <input class="form-control" id="phone" type="tel" placeholder="(00) 9456-7890"
-                               data-sb-validations="required"/>
-                        <label for="phone">Telefone</label>
-                        <div class="invalid-feedback" data-sb-feedback="phone:required">O telefone é obrigatório.</div>
-                    </div>
-                    <!-- Message input-->
-                    <div class="form-floating mb-3">
-                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..."
-                                  style="height: 10rem" data-sb-validations="required"></textarea>
-                        <label for="message">Mensagem</label>
-                        <div class="invalid-feedback" data-sb-feedback="message:required">Mensagem é obrigatório.</div>
-                    </div>
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center mb-3">
-                            <div class="fw-bolder">Formulário enviado com sucesso!</div>
-                            To activate this form, sign up at
-                            <br/>
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="faq2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">Trabalham com prontuários eletrônicos?</button>
+                        </h3>
+                        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Sim. Desenvolvemos e integramos sistemas de prontuário eletrônico (PEP) e prontuário eletrônico do cidadão (PEC) conforme as normas e padrões vigentes.</div>
                         </div>
                     </div>
-                    <div class="d-none" id="submitErrorMessage">
-                        <div class="text-center text-danger mb-3">Erro ao enviar a mensagem!</div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="faq3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">Podem integrar com aparelhos e sistemas hospitalares?</button>
+                        </h3>
+                        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Sim. Realizamos integração com equipamentos médicos e laboratoriais, bem como com sistemas existentes em clínicas e hospitais, para centralizar dados e otimizar processos.</div>
+                        </div>
                     </div>
-                    <!-- Submit Button-->
-                    <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Enviar</button>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="faq4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Atendem clínicas e laboratórios?</button>
+                        </h3>
+                        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Sim. Desenvolvemos soluções personalizadas para clínicas, laboratórios, hospitais, universidades e instituições de pesquisa em saúde e biotecnologia.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="page-section contact-section" id="contact">
+    <div class="container">
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">Contato</h2>
+        <div class="divider-custom"></div>
+        <div class="row align-items-start g-5">
+            <div class="col-lg-5">
+                <div class="contact-info">
+                    <h3 class="contact-block-title">Endereço</h3>
+                    <p class="contact-text">
+                        Rua Vinte e Cinco de Janeiro Nº 78<br>
+                        Viamão - RS
+                    </p>
+                    <h3 class="contact-block-title mt-4">Contatos</h3>
+                    <p class="contact-text mb-1">
+                        <i class="fas fa-phone-alt me-2"></i> 51 98575-5997
+                    </p>
+                    <p class="contact-text mb-0">
+                        <i class="fas fa-envelope me-2"></i> <a href="mailto:contato@webmatte.com.br">contato@webmatte.com.br</a>
+                    </p>
+                    <p class="contact-text mt-2">
+                        <i class="fab fa-whatsapp me-2"></i> <a href="https://wa.me/5551985755997" target="_blank">WhatsApp</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <h3 class="contact-form-title">Nos envie uma mensagem</h3>
+                <div id="formMessage" class="alert d-none mb-4" role="alert"></div>
+                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="08339c73-f40f-46b6-8fa4-a8a920bb41d5">
+                    <input type="hidden" name="subject" value="Contato - Webmatte Soluções Web">
+                    <input type="hidden" name="from_name" value="Site Webmatte">
+                    <input type="checkbox" name="botcheck" class="d-none" autocomplete="off">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <input class="form-control form-control-contact" id="name" name="name" type="text" placeholder="Nome" required/>
+                        </div>
+                        <div class="col-md-6">
+                            <input class="form-control form-control-contact" id="email" name="email" type="email" placeholder="Email" required/>
+                        </div>
+                        <div class="col-12">
+                            <input class="form-control form-control-contact" id="phone" name="phone" type="tel" placeholder="Telefone" required/>
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control form-control-contact" id="message" name="message" placeholder="Mensagem" rows="4" required></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary btn-contact" id="submitButton" type="submit">Enviar</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
@@ -535,6 +372,8 @@ Divirta-se!</p>
                 <h4 class="text-uppercase mb-4">Contato</h4>
                 <p class="lead mb-0">
                     51 98575-5997
+					<br/>
+					contato@webmatte.com.br
                 </p>
             </div>
         </div>
@@ -542,7 +381,7 @@ Divirta-se!</p>
 </footer>
 <!-- Copyright Section-->
 <div class="copyright py-4 text-center text-white">
-    <div class="container"><small>Copyright &copy; Webmatte Soluções Web 2022</small></div>
+    <div class="container"><small>Copyright &copy; Webmatte Soluções Web 2025</small></div>
 </div>
 <div id="whatswidget-pre-wrapper" class="">
     <div id="whatswidget-widget-wrapper" class="whatswidget-widget-wrapper" style="all:revert;">
@@ -573,8 +412,7 @@ Divirta-se!</p>
         <div id="whatswidget-conversation-message-outer" class="whatswidget-conversation-message-outer"
              style="color: revert; font: revert; font-feature-settings: revert; font-kerning: revert; font-optical-sizing: revert; font-palette: revert; font-synthesis: revert; font-variation-settings: revert; forced-color-adjust: revert; text-orientation: revert; text-rendering: revert; -webkit-font-smoothing: revert; -webkit-locale: revert; -webkit-text-orientation: revert; -webkit-writing-mode: revert; writing-mode: revert; zoom: revert; accent-color: revert; place-content: revert; place-items: revert; place-self: revert; alignment-baseline: revert; animation: revert; app-region: revert; appearance: revert; aspect-ratio: revert; backdrop-filter: revert; backface-visibility: revert; background: revert; background-blend-mode: revert; baseline-shift: revert; block-size: revert; border-block: revert; border: revert; border-radius: revert; border-collapse: revert; border-end-end-radius: revert; border-end-start-radius: revert; border-inline: revert; border-start-end-radius: revert; border-start-start-radius: revert; inset: revert; box-shadow: revert; box-sizing: revert; break-after: revert; break-before: revert; break-inside: revert; buffered-rendering: revert; caption-side: revert; caret-color: revert; clear: revert; clip: revert; clip-path: revert; clip-rule: revert; color-interpolation: revert; color-interpolation-filters: revert; color-rendering: revert; color-scheme: revert; columns: revert; column-fill: revert; gap: revert; column-rule: revert; column-span: revert; contain: revert; contain-intrinsic-block-size: revert; contain-intrinsic-size: revert; contain-intrinsic-inline-size: revert; content: revert; content-visibility: revert; counter-increment: revert; counter-reset: revert; counter-set: revert; cursor: revert; cx: revert; cy: revert; d: revert; display: none; dominant-baseline: revert; empty-cells: revert; fill: revert; fill-opacity: revert; fill-rule: revert; filter: revert; flex: revert; flex-flow: revert; float: revert; flood-color: revert; flood-opacity: revert; grid: revert; grid-area: revert; height: revert; hyphens: revert; image-orientation: revert; image-rendering: revert; inline-size: revert; inset-block: revert; inset-inline: revert; isolation: revert; letter-spacing: revert; lighting-color: revert; line-break: revert; list-style: revert; margin-block: revert; margin: revert; margin-inline: revert; marker: revert; mask: revert; mask-type: revert; max-block-size: revert; max-height: revert; max-inline-size: revert; max-width: revert; min-block-size: revert; min-height: revert; min-inline-size: revert; min-width: revert; mix-blend-mode: revert; object-fit: revert; object-position: revert; offset: revert; opacity: revert; order: revert; origin-trial-test-property: revert; orphans: revert; outline: revert; outline-offset: revert; overflow-anchor: revert; overflow-clip-margin: revert; overflow-wrap: revert; overflow: revert; overscroll-behavior-block: revert; overscroll-behavior-inline: revert; overscroll-behavior: revert; padding-block: revert; padding: revert; padding-inline: revert; page: revert; page-orientation: revert; paint-order: revert; perspective: revert; perspective-origin: revert; pointer-events: revert; position: revert; quotes: revert; r: revert; resize: revert; ruby-position: revert; rx: revert; ry: revert; scroll-behavior: revert; scroll-margin-block: revert; scroll-margin: revert; scroll-margin-inline: revert; scroll-padding-block: revert; scroll-padding: revert; scroll-padding-inline: revert; scroll-snap-align: revert; scroll-snap-stop: revert; scroll-snap-type: revert; scrollbar-gutter: revert; shape-image-threshold: revert; shape-margin: revert; shape-outside: revert; shape-rendering: revert; size: revert; speak: revert; stop-color: revert; stop-opacity: revert; stroke: revert; stroke-dasharray: revert; stroke-dashoffset: revert; stroke-linecap: revert; stroke-linejoin: revert; stroke-miterlimit: revert; stroke-opacity: revert; stroke-width: revert; tab-size: revert; table-layout: revert; text-align: revert; text-align-last: revert; text-anchor: revert; text-combine-upright: revert; text-decoration: revert; text-decoration-skip-ink: revert; text-emphasis: revert; text-emphasis-position: revert; text-indent: revert; text-overflow: revert; text-shadow: revert; text-size-adjust: revert; text-transform: revert; text-underline-offset: revert; text-underline-position: revert; touch-action: revert; transform: revert; transform-box: revert; transform-origin: revert; transform-style: revert; transition: revert; user-select: revert; vector-effect: revert; vertical-align: revert; visibility: revert; border-spacing: revert; -webkit-border-image: revert; -webkit-box-align: revert; -webkit-box-decoration-break: revert; -webkit-box-direction: revert; -webkit-box-flex: revert; -webkit-box-ordinal-group: revert; -webkit-box-orient: revert; -webkit-box-pack: revert; -webkit-box-reflect: revert; -webkit-highlight: revert; -webkit-hyphenate-character: revert; -webkit-line-break: revert; -webkit-line-clamp: revert; -webkit-mask-box-image: revert; -webkit-mask: revert; -webkit-mask-composite: revert; -webkit-perspective-origin-x: revert; -webkit-perspective-origin-y: revert; -webkit-print-color-adjust: revert; -webkit-rtl-ordering: revert; -webkit-ruby-position: revert; -webkit-tap-highlight-color: revert; -webkit-text-combine: revert; -webkit-text-decorations-in-effect: revert; -webkit-text-fill-color: revert; -webkit-text-security: revert; -webkit-text-stroke: revert; -webkit-transform-origin-x: revert; -webkit-transform-origin-y: revert; -webkit-transform-origin-z: revert; -webkit-user-drag: revert; -webkit-user-modify: revert; white-space: revert; widows: revert; width: revert; will-change: revert; word-break: revert; word-spacing: revert; x: revert; y: revert; z-index: revert;">
             <span id="whatswidget-text-header-outer" class="whatswidget-text-header-outer" style="all:revert;">WEBMATTE SOLUÇÕES WEB</span><br>
-            <div id="whatswidget-text-message-outer" class="whatswidget-text-message-outer" style="all:revert;">Olá
-                eu gostaria de maiores informações sobre os cursos.
+            <div id="whatswidget-text-message-outer" class="whatswidget-text-message-outer" style="all:revert;">Olá, gostaria de mais informações sobre os serviços de desenvolvimento para saúde e biotecnologia.
             </div>
         </div>
         <div class="whatswidget-button-wrapper" style="all:revert;">
@@ -598,10 +436,37 @@ Divirta-se!</p>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
 <script src="js/scripts.js"></script>
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-<!-- * *                               SB Forms JS                               * *-->
-<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+<!-- Web3Forms - substitua SEU_ACCESS_KEY_AQUI pelo seu access key de https://web3forms.com -->
+<script>
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const btn = document.getElementById('submitButton');
+  const msg = document.getElementById('formMessage');
+  btn.disabled = true;
+  btn.textContent = 'Enviando...';
+  msg.classList.add('d-none');
+  const formData = new FormData(this);
+  try {
+    const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: formData });
+    const data = await res.json();
+    if (data.success) {
+      msg.className = 'alert alert-success';
+      msg.textContent = 'Mensagem enviada com sucesso! Entraremos em contato em breve.';
+      msg.classList.remove('d-none');
+      this.reset();
+    } else {
+      msg.className = 'alert alert-danger';
+      msg.textContent = data.message || 'Erro ao enviar. Verifique seu access_key em web3forms.com';
+      msg.classList.remove('d-none');
+    }
+  } catch (err) {
+    msg.className = 'alert alert-danger';
+    msg.textContent = 'Erro de conexão. Tente novamente ou use o WhatsApp.';
+    msg.classList.remove('d-none');
+  }
+  btn.disabled = false;
+  btn.textContent = 'Enviar';
+});
+</script>
 </body>
 </html>
