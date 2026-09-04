@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>LEC Nova API</title>
+
+    <meta
+            name="description"
+            content="Documentação técnica da POC da nova arquitetura da Lista de Espera Cirúrgica"
+    >
+
+    <link
+            rel="stylesheet"
+            href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"
+    >
+
+    <style>
+        /* Espaçamento geral do menu lateral */
+        .sidebar {
+            padding-left: 24px;
+            padding-right: 16px;
+        }
+
+        /* Título principal */
+        .sidebar > h1 {
+            margin-left: 0;
+        }
+
+        /* Títulos das seções */
+        .sidebar-nav > h2 {
+            margin-left: 0;
+            margin-top: 24px;
+        }
+
+        /* Remove recuos inconsistentes das listas */
+        .sidebar-nav ul {
+            padding-left: 0;
+        }
+
+        /* Links do menu */
+        .sidebar-nav li {
+            margin-left: 0;
+        }
+
+        .sidebar-nav li a {
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="app">Carregando documentação...</div>
+
+<script>
+    window.$docsify = {
+        name: 'LEC Nova API',
+        loadSidebar: true,
+        subMaxLevel: 0,
+        auto2top: true,
+        homepage: 'README.md',
+
+        search: {
+            placeholder: 'Pesquisar documentação',
+            noData: 'Nenhum resultado encontrado',
+            depth: 4
+        }
+    };
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-java.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-properties.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-sql.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-powershell.min.js"></script>
+
+</body>
+</html>
