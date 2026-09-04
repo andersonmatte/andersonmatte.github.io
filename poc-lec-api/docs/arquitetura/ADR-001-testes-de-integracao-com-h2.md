@@ -38,7 +38,7 @@ A POC deve executar de forma rápida e sem depender de Docker ou de um banco ext
 
 <div align="center">
 
-[![Voltar ao README](https://img.shields.io/badge/Documentation-Voltar_ao_README-0066cc?style=flat-square)](../../README.md)
+[![Voltar ao README](https://img.shields.io/badge/Documentation-Voltar_ao_README-0066cc?style=flat-square)](/)
 
 </div>
 

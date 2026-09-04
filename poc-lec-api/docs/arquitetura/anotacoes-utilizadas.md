@@ -187,7 +187,7 @@ Mockito é usado programaticamente nos testes unitários; atualmente não há de
 
 <div align="center">
 
-[![Voltar ao README](https://img.shields.io/badge/Documentation-Voltar_ao_README-0066cc?style=flat-square)](../../README.md)
+[![Voltar ao README](https://img.shields.io/badge/Documentation-Voltar_ao_README-0066cc?style=flat-square)](/)
 
 </div>
 

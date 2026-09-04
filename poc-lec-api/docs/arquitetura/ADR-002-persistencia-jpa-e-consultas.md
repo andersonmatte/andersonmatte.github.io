@@ -38,7 +38,7 @@ Essa combinação introduz JPA sem repetir os grandes grafos de entidades e os r
 
 <div align="center">
 
-[![Voltar ao README](https://img.shields.io/badge/Documentation-Voltar_ao_README-0066cc?style=flat-square)](../../README.md)
+[![Voltar ao README](https://img.shields.io/badge/Documentation-Voltar_ao_README-0066cc?style=flat-square)](/)
 
 </div>
 
