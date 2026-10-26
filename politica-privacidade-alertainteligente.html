@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#ff8f00">
+    <meta name="description" content="Política de Privacidade do aplicativo Alerta Inteligente.">
+    <title>Política de Privacidade | Alerta Inteligente</title>
+    <link rel="icon" href="assets/favicon.ico" sizes="any">
+    <link rel="stylesheet" href="css/custom.css">
+    <script>
+        (() => {
+            document.documentElement.classList.add('js');
+            let theme = 'light';
+            try {
+                theme = localStorage.getItem('webmatte-theme-v1') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            } catch (_) {
+                theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+            document.documentElement.dataset.theme = theme;
+        })();
+    </script>
+</head>
+<body class="legal-page" id="top">
+<a class="skip-link" href="#legal-content">Pular para o conteúdo</a>
+
+<header class="site-header">
+    <div class="site-header__inner">
+        <a class="global-brand" href="index.html" aria-label="Webmatte Soluções Web — início">
+            <img class="global-brand__logo" src="assets/img/logo_transparent_background.png" alt="">
+        </a>
+        <span class="legal-context" aria-hidden="true">/</span>
+        <span class="legal-product">Privacidade</span>
+        <a class="header-cta" href="index.html">Voltar ao site</a>
+        <button class="icon-button theme-toggle" type="button" aria-label="Alternar tema claro e escuro" aria-pressed="false">
+            <span class="theme-icon theme-icon--sun"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span>
+            <span class="theme-icon theme-icon--moon"><svg class="icon" viewBox="0 0 24 24"><path d="M20.5 15.2A8.5 8.5 0 0 1 8.8 3.5 8.5 8.5 0 1 0 20.5 15.2Z"/></svg></span>
+        </button>
+    </div>
+</header>
+
+<main id="legal-content">
+    <section class="legal-hero">
+        <div class="legal-hero__mesh" aria-hidden="true"></div>
+        <div class="container legal-hero__inner">
+            <span class="eyebrow"><i></i>Documentação do aplicativo</span>
+            <h1>Política de Privacidade</h1>
+            <p>Como as informações são tratadas durante o uso do aplicativo <strong>Alerta Inteligente</strong>.</p>
+        </div>
+    </section>
+
+    <div class="container legal-grid">
+        <aside class="legal-toc" aria-label="Nesta página">
+            <strong>Nesta página</strong>
+            <nav>
+                <a href="#visao-geral">Visão geral</a>
+                <a href="#dados">Dados pessoais</a>
+                <a href="#armazenamento">Armazenamento local</a>
+                <a href="#permissoes">Permissões</a>
+                <a href="#compartilhamento">Compartilhamento</a>
+                <a href="#saude">Saúde e bem-estar</a>
+                <a href="#atualizacoes">Atualizações</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </aside>
+
+        <article class="legal-article">
+            <div class="legal-callout"><strong>Resumo</strong><p>O Alerta Inteligente permite criar lembretes de cuidados pessoais, como hidratação, medicamentos, exercícios e acompanhamento de sinais vitais. Os lembretes são mantidos localmente no dispositivo, e o aplicativo utiliza notificações do Android para avisar sobre os horários cadastrados. A versão atual não possui recursos próprios de envio desses registros a servidores da Webmatte.</p></div>
+
+            <section id="visao-geral">
+                <h2>Visão geral</h2>
+                <p>O aplicativo <strong>Alerta Inteligente</strong>, disponibilizado pela Webmatte Soluções Web, foi desenvolvido para auxiliar na organização de lembretes de saúde, autocuidado e bem-estar.</p>
+                <p>É possível cadastrar lembretes relacionados a beber água, tomar medicamentos, realizar atividades físicas, aferir pressão arterial, medir glicose e outras rotinas de cuidado. O uso das funcionalidades principais não exige criação de conta ou conexão com a internet.</p>
+            </section>
+
+            <section id="dados">
+                <h2>Dados pessoais</h2>
+                <p>O aplicativo não solicita nome, e-mail, telefone ou documentos de identificação para criar lembretes.</p>
+                <p>Os títulos, tipos de cuidado, horários, frequências e estados de conclusão inseridos pelo usuário podem revelar informações sobre sua rotina e saúde. Essas informações são utilizadas para organizar e apresentar os lembretes e programar as notificações no próprio dispositivo.</p>
+                <p>A versão atual não implementa cadastro de usuários, sincronização em nuvem ou transmissão desses registros para servidores da Webmatte.</p>
+            </section>
+
+            <section id="armazenamento">
+                <h2>Armazenamento local</h2>
+                <p>Os lembretes e as preferências necessárias ao funcionamento do aplicativo são armazenados localmente no dispositivo. O sistema Android também pode manter informações técnicas necessárias ao agendamento e à exibição das notificações.</p>
+                <p>O usuário pode editar, concluir ou excluir lembretes pelas funcionalidades disponíveis no aplicativo. A remoção do aplicativo normalmente exclui seus dados locais, ressalvadas eventuais cópias de segurança gerenciadas pelo sistema operacional ou pelo próprio usuário.</p>
+            </section>
+
+            <section id="permissoes">
+                <h2>Permissões</h2>
+                <p>O aplicativo solicita autorização para <strong>enviar notificações</strong>, necessária para avisar sobre os cuidados nos horários programados. O usuário pode permitir ou negar essa autorização e gerenciá-la posteriormente nas configurações do Android.</p>
+                <p>O aplicativo pode utilizar recursos do sistema operacional para agendar lembretes e executar notificações em segundo plano. A entrega pode sofrer atrasos ou restrições conforme as configurações de bateria, permissões e políticas do dispositivo.</p>
+                <p>As funcionalidades descritas não exigem acesso à localização, aos contatos, à câmera ou ao microfone.</p>
+            </section>
+
+            <section id="compartilhamento">
+                <h2>Compartilhamento</h2>
+                <p>A versão atual não implementa funcionalidades próprias de compartilhamento dos lembretes ou dados de saúde com terceiros, publicidade comportamental ou envio de informações a servidores da Webmatte.</p>
+                <p>O tratamento de dados realizado pelo sistema operacional, por serviços de backup do dispositivo ou pela plataforma de distribuição está sujeito às políticas dos respectivos fornecedores.</p>
+            </section>
+
+            <section id="saude">
+                <h2>Saúde e bem-estar</h2>
+                <p>O Alerta Inteligente é uma ferramenta de organização pessoal e <strong>não é um dispositivo médico</strong>. O aplicativo não mede sinais vitais, não realiza diagnósticos, não recomenda medicamentos ou doses e não substitui avaliação, orientação ou tratamento por profissionais de saúde.</p>
+                <p>Os lembretes de medicamentos e outros cuidados dependem das informações cadastradas pelo usuário. Para tratamentos e horários críticos, siga as orientações de profissionais de saúde e não dependa exclusivamente das notificações do aplicativo.</p>
+            </section>
+
+            <section id="atualizacoes">
+                <h2>Atualizações desta política</h2>
+                <p>Esta política poderá ser atualizada caso o aplicativo receba novas funcionalidades ou ocorram alterações nas práticas de tratamento de dados. A versão atualizada será disponibilizada nesta página, com a respectiva data de revisão.</p>
+            </section>
+
+            <section id="contato">
+                <h2>Contato</h2>
+                <p>Em caso de dúvidas sobre esta política ou sobre o aplicativo, entre em contato pelo e-mail <a href="mailto:contato@webmatte.com.br">contato@webmatte.com.br</a>.</p>
+                <p class="legal-meta">Última atualização: outubro de 2026.</p>
+            </section>
+        </article>
+    </div>
+</main>
+
+<footer class="legal-footer">
+    <div class="container"><span>© <span data-current-year>2026</span> Webmatte Soluções Web.</span><a href="index.html">Voltar ao site</a></div>
+</footer>
+<script src="js/scripts.js" defer></script>
+</body>
+</html>
