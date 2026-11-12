@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="light dark" name="color-scheme"/>
+<meta content="#02A9D6" name="theme-color"/>
+<meta content="Política de Privacidade do aplicativo Busca Endereço e CEP." name="description"/>
+<title>Política de Privacidade | Busca Endereço e CEP</title>
+<link href="assets/favicon.ico" rel="icon" sizes="any"/>
+<link href="css/custom.css" rel="stylesheet"/>
+<script>
+        (() => {
+            document.documentElement.classList.add('js');
+            let theme = 'light';
+            try {
+                theme = localStorage.getItem('webmatte-theme-v1') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            } catch (_) {
+                theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+            document.documentElement.dataset.theme = theme;
+        })();
+    </script>
+</head>
+<body class="legal-page" id="top">
+<a class="skip-link" href="#legal-content">Pular para o conteúdo</a>
+<header class="site-header">
+<div class="site-header__inner">
+<a aria-label="Webmatte Soluções Web — início" class="global-brand" href="index.html">
+<img alt="" class="global-brand__logo" src="assets/img/logo_transparent_background.png"/>
+</a>
+<span aria-hidden="true" class="legal-context">/</span>
+<span class="legal-product">Privacidade</span>
+<a class="header-cta" href="index.html">Voltar ao site</a>
+<button aria-label="Alternar tema claro e escuro" aria-pressed="false" class="icon-button theme-toggle" type="button">
+<span class="theme-icon theme-icon--sun"><svg class="icon" viewbox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg></span>
+<span class="theme-icon theme-icon--moon"><svg class="icon" viewbox="0 0 24 24"><path d="M20.5 15.2A8.5 8.5 0 0 1 8.8 3.5 8.5 8.5 0 1 0 20.5 15.2Z"></path></svg></span>
+</button>
+</div>
+</header>
+<main id="legal-content">
+<section class="legal-hero">
+<div aria-hidden="true" class="legal-hero__mesh"></div>
+<div class="container legal-hero__inner">
+<span class="eyebrow"><i></i>Documentação do aplicativo</span>
+<h1>Política de Privacidade</h1>
+<p>Como as informações são tratadas durante o uso do aplicativo <strong>Busca Endereço e CEP</strong>.</p>
+</div>
+</section>
+<div class="container legal-grid">
+<aside aria-label="Nesta página" class="legal-toc">
+<strong>Nesta página</strong>
+<nav><a href="#visao-geral">Visão geral</a><a href="#dados">Dados pessoais e consultas</a><a href="#favoritos">Favoritos e armazenamento</a><a href="#permissoes">Permissões</a><a href="#publicidade">Publicidade e consentimento</a><a href="#compartilhamento">Compartilhamento</a><a href="#seguranca">Segurança e direitos</a><a href="#atualizacoes">Atualizações</a><a href="#contato">Contato</a></nav>
+</aside>
+<article class="legal-article">
+<div class="legal-callout"><strong>Resumo</strong><p>O Busca Endereço e CEP permite consultar endereços brasileiros por CEP ou logradouro, copiar informações e salvar favoritos no próprio dispositivo, sem exigir cadastro. As consultas utilizam o serviço ViaCEP e dependem de internet; os favoritos já salvos podem ser acessados offline. O aplicativo apresenta anúncios do Google AdMob, sujeitos às escolhas de privacidade aplicáveis.</p></div>
+<section id="visao-geral"><h2>Visão geral</h2><p>O aplicativo <strong>Busca Endereço e CEP</strong>, disponibilizado pela Webmatte Soluções Web, oferece pesquisa de endereços brasileiros por CEP e por estado, cidade e logradouro. Também permite consultar detalhes, copiar informações e manter uma lista de favoritos.</p><p>Não é necessário criar uma conta. Novas consultas exigem conexão com a internet para acessar o serviço ViaCEP. Endereços previamente adicionados aos favoritos podem ser visualizados sem conexão.</p></section>
+<section id="dados"><h2>Dados pessoais e consultas</h2><p>Para utilizar as funções principais, o aplicativo não solicita nome, e-mail, telefone, documentos ou criação de conta. As pesquisas utilizam os dados informados pelo usuário, como CEP, unidade federativa, cidade e nome do logradouro, para consultar o serviço externo <strong>ViaCEP</strong>.</p><p>As solicitações de consulta são enviadas ao serviço ViaCEP pela internet. Como ocorre em serviços online, informações técnicas da conexão, como o endereço IP, podem ser processadas pelo provedor do serviço. A Webmatte não opera um servidor próprio para armazenar o histórico individual dessas consultas.</p><p>O SDK de publicidade pode coletar ou transmitir identificadores do dispositivo, incluindo identificadores publicitários quando disponíveis, interações com anúncios, dados de diagnóstico e informações técnicas, como endereço IP, conforme sua configuração, as escolhas do usuário e a legislação aplicável.</p></section>
+<section id="favoritos"><h2>Favoritos e armazenamento local</h2><p>Os CEPs e endereços adicionados aos favoritos são armazenados localmente no dispositivo, para permitir acesso posterior mesmo sem internet. O usuário pode adicionar e remover favoritos pelo aplicativo.</p><p>Os favoritos não são enviados pela funcionalidade de favoritos a servidores próprios da Webmatte nem utilizados pelo aplicativo para personalização de anúncios. Eles podem ser apagados ao remover os itens salvos, limpar os dados do aplicativo ou desinstalá-lo, ressalvados eventuais mecanismos de backup e restauração do sistema operacional.</p></section>
+<section id="permissoes"><h2>Permissões</h2><p>As buscas não exigem acesso ao GPS ou à localização precisa do dispositivo: a localização da pesquisa é informada pelo próprio usuário. O aplicativo não precisa acessar câmera, microfone ou contatos para consultar endereços.</p><p>O acesso à internet é utilizado nas consultas ao ViaCEP, no carregamento de publicidade e na gestão das escolhas de privacidade. Identificadores disponibilizados pelo Android podem ser utilizados pelo SDK de anúncios de acordo com as permissões e regras da plataforma.</p></section>
+<section id="publicidade"><h2>Publicidade e gerenciamento de consentimento</h2><p>O aplicativo utiliza o <strong>Google AdMob</strong> para exibir <strong>banners</strong> nas telas funcionais e <strong>anúncios intersticiais</strong> em momentos de transição após consultas, antes da apresentação de determinados resultados. A tela de abertura (splash) não exibe anúncios.</p><p>O Google e seus parceiros, quando aplicável, podem tratar identificadores, dados de interação, informações técnicas e de desempenho para apresentação e medição de anúncios, prevenção de fraudes e outras finalidades previstas em suas políticas.</p><p>O aplicativo integra a <strong>Google User Messaging Platform (UMP)</strong> para apresentar mensagens de consentimento e opções de privacidade quando exigidas. As opções disponíveis podem variar conforme a região e os requisitos legais. Quando oferecida no aplicativo, a opção de privacidade permite revisar escolhas relacionadas à publicidade.</p><p>Consulte a <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Política de Privacidade do Google</a> e as <a href="https://policies.google.com/technologies/ads" rel="noopener noreferrer" target="_blank">informações sobre publicidade do Google</a>.</p></section>
+<section id="compartilhamento"><h2>Compartilhamento e serviços externos</h2><p>As consultas são realizadas por meio do serviço <strong>ViaCEP</strong>, que recebe os parâmetros necessários à pesquisa. Consulte também as informações disponibilizadas pelo serviço em <a href="https://viacep.com.br/" rel="noopener noreferrer" target="_blank">viacep.com.br</a>.</p><p>A integração com o Google AdMob envolve comunicação com serviços do Google e, conforme as escolhas e configurações aplicáveis, parceiros publicitários. A Webmatte não comercializa diretamente os dados pessoais dos usuários nem disponibiliza os favoritos para anunciantes por meio de funcionalidade própria.</p><p>O tratamento realizado pelo sistema operacional, pela loja de aplicativos ou por serviços externos está sujeito às políticas dos respectivos fornecedores.</p></section>
+<section id="seguranca"><h2>Segurança, retenção e direitos do usuário</h2><p>O aplicativo utiliza os mecanismos de comunicação disponibilizados pelas bibliotecas e serviços integrados. Nenhuma transmissão pela internet pode ser considerada completamente livre de riscos. A retenção de dados tratados por serviços externos, como Google e ViaCEP, segue as práticas e políticas dos respectivos responsáveis.</p><p>O usuário pode excluir favoritos pelo aplicativo e gerenciar os dados locais nas configurações do Android. Também pode ajustar as opções de privacidade disponibilizadas pelo aplicativo, quando aplicáveis, e os identificadores publicitários nas configurações do dispositivo.</p><p>Para esclarecimentos ou exercício dos direitos previstos na Lei Geral de Proteção de Dados (LGPD) relativos ao tratamento sob responsabilidade da Webmatte, utilize o contato indicado abaixo. Solicitações referentes a informações tratadas diretamente por terceiros podem depender dos canais desses fornecedores.</p></section>
+<section id="atualizacoes"><h2>Atualizações desta política</h2><p>Esta política poderá ser atualizada em caso de alterações nas funcionalidades, integrações ou práticas de tratamento de dados. A versão atualizada será disponibilizada nesta página, com a data da revisão.</p></section>
+<section id="contato"><h2>Contato</h2><p>Em caso de dúvidas sobre esta política ou sobre o aplicativo, entre em contato pelo e-mail <a href="mailto:contato@webmatte.com.br">contato@webmatte.com.br</a>.</p><p class="legal-meta">Última atualização: 12 de novembro de 2026.</p></section>
+</article>
+</div>
+</main>
+<footer class="legal-footer">
+<div class="container"><span>© <span data-current-year="">2026</span> Webmatte Soluções Web.</span><a href="index.html">Voltar ao site</a></div>
+</footer>
+<script defer="" src="js/scripts.js"></script>
+</body>
+</html>
