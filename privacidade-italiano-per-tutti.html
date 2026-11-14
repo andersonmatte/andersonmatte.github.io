@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="theme-color" content="#008a46"/>
+  <meta name="description" content="Política de Privacidade do aplicativo Italiano Per Tutti."/>
+  <title>Política de Privacidade | Italiano Per Tutti</title>
+  <link href="assets/favicon.ico" rel="icon" sizes="any"/>
+  <link href="css/custom.css" rel="stylesheet"/>
+  <script>
+    (() => {
+      document.documentElement.classList.add('js');
+      let theme = 'light';
+      try {
+        theme = localStorage.getItem('webmatte-theme-v1') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      } catch (_) {
+        theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.dataset.theme = theme;
+    })();
+  </script>
+</head>
+<body class="legal-page" id="top">
+  <a class="skip-link" href="#legal-content">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a aria-label="Webmatte Soluções Web — início" class="global-brand" href="index.html">
+        <img alt="" class="global-brand__logo" src="assets/img/logo_transparent_background.png"/>
+      </a>
+      <span aria-hidden="true" class="legal-context">/</span>
+      <span class="legal-product">Privacidade</span>
+      <a class="header-cta" href="index.html">Voltar ao site</a>
+      <button aria-label="Alternar tema claro e escuro" aria-pressed="false" class="icon-button theme-toggle" type="button">
+        <span class="theme-icon theme-icon--sun"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg></span>
+        <span class="theme-icon theme-icon--moon"><svg class="icon" viewBox="0 0 24 24"><path d="M20.5 15.2A8.5 8.5 0 0 1 8.8 3.5 8.5 8.5 0 1 0 20.5 15.2Z"></path></svg></span>
+      </button>
+    </div>
+  </header>
+  <main id="legal-content">
+    <section class="legal-hero">
+      <div aria-hidden="true" class="legal-hero__mesh"></div>
+      <div class="container legal-hero__inner">
+        <span class="eyebrow"><i></i>Documentação do aplicativo</span>
+        <h1>Política de Privacidade</h1>
+        <p>Como as informações são tratadas durante o uso do aplicativo <strong>Italiano Per Tutti</strong>.</p>
+      </div>
+    </section>
+    <div class="container legal-grid">
+      <aside aria-label="Nesta página" class="legal-toc">
+        <strong>Nesta página</strong>
+        <nav>
+          <a href="#visao-geral">Visão geral</a>
+          <a href="#dados">Dados e armazenamento</a>
+          <a href="#conteudo-remoto">Conteúdo e downloads</a>
+          <a href="#permissoes">Permissões</a>
+          <a href="#publicidade">Publicidade e consentimento</a>
+          <a href="#compartilhamento">Serviços externos</a>
+          <a href="#seguranca">Segurança e direitos</a>
+          <a href="#publico">Público e aprendizagem</a>
+          <a href="#atualizacoes">Atualizações</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </aside>
+      <article class="legal-article">
+        <div class="legal-callout">
+          <strong>Resumo</strong>
+          <p>O <strong>Italiano Per Tutti</strong> é um aplicativo educacional que permite estudar italiano sem criar uma conta. O progresso das aulas é armazenado localmente no dispositivo. O catálogo e as imagens das aulas podem ser obtidos de um servidor da Webmatte, e os conteúdos baixados podem ser utilizados offline. O aplicativo utiliza o Google AdMob para publicidade e a plataforma UMP para gerenciar escolhas de privacidade quando aplicável.</p>
+        </div>
+        <section id="visao-geral">
+          <h2>Visão geral</h2>
+          <p>O <strong>Italiano Per Tutti</strong> é um aplicativo educacional desenvolvido pela <strong>Webmatte Soluções Web</strong>, voltado ao aprendizado da língua italiana por meio de módulos, aulas ilustradas e recursos de acompanhamento de estudos. O aplicativo disponibiliza conteúdos de vocabulário, gramática, verbos, conversação e outros temas relacionados ao idioma. Não é necessário criar conta ou informar nome, e-mail ou telefone para acessar as funções educacionais.</p>
+        </section>
+        <section id="dados">
+          <h2>Dados e armazenamento local</h2>
+          <p>O aplicativo registra no próprio dispositivo informações necessárias para acompanhar a aprendizagem, como identificadores das aulas acessadas, estado de cada aula (não iniciada, em andamento ou concluída), datas de acesso e conclusão e referência à última aula estudada. Esses registros são mantidos em um banco de dados SQLite local e não são enviados à API de conteúdo para criação de perfil de aluno ou sincronização de contas.</p>
+          <p>O aplicativo também armazena localmente o catálogo de módulos e aulas e imagens baixadas para permitir acesso offline. A remoção de imagens baixadas não implica exclusão do progresso das aulas. Os dados locais podem ser apagados ao limpar os dados do aplicativo ou desinstalá-lo, sujeitos a eventuais mecanismos de backup do sistema operacional.</p>
+          <p>Embora a Webmatte não solicite dados cadastrais para o estudo, o SDK de publicidade pode tratar dados técnicos, identificadores publicitários quando disponíveis, informações de interação com anúncios, diagnósticos e dados de conexão, como endereço IP, conforme suas configurações e políticas.</p>
+        </section>
+        <section id="conteudo-remoto">
+          <h2>Conteúdo remoto e downloads</h2>
+          <p>Para atualizar o catálogo e disponibilizar as imagens das aulas, o aplicativo se comunica por HTTPS com a API de conteúdo da Webmatte, em <a href="https://api-italiano.webmatte.com.br" rel="noopener noreferrer" target="_blank">api-italiano.webmatte.com.br</a>. Essas solicitações podem envolver dados técnicos de conexão, como endereço IP, data e hora da requisição e informações técnicas normalmente registradas pela infraestrutura de hospedagem para operação e segurança.</p>
+          <p>O usuário pode baixar imagens de aulas individualmente ou de módulos completos para estudar sem conexão. Os arquivos são mantidos no armazenamento do aplicativo e podem ser removidos pelos recursos disponíveis. O progresso educacional permanece independente desses downloads. A sincronização do catálogo e o acesso a imagens ainda não baixadas dependem de conexão com a internet.</p>
+        </section>
+        <section id="permissoes">
+          <h2>Permissões e recursos do dispositivo</h2>
+          <p>O aplicativo utiliza acesso à internet para sincronizar o catálogo, obter imagens de aulas e carregar anúncios. O armazenamento local de progresso e imagens é realizado nos diretórios privados do aplicativo. A exibição de anúncios não requer acesso ao GPS, contatos, câmera ou microfone. O SDK de publicidade pode utilizar identificadores e permissões declaradas automaticamente por suas bibliotecas, incluindo o identificador de publicidade quando permitido pelo Android e pelas escolhas aplicáveis. As permissões efetivamente presentes na versão publicada devem corresponder à configuração final do aplicativo.</p>
+        </section>
+        <section id="publicidade">
+          <h2>Publicidade e gerenciamento de consentimento</h2>
+          <p>O Italiano Per Tutti utiliza o <strong>Google AdMob</strong> para exibir banners na tela inicial e em listas de módulos e aulas, além de anúncios intersticiais ocasionais em transições de navegação. O visualizador das imagens das aulas não exibe anúncios durante a leitura. A indisponibilidade de anúncios não impede o acesso aos recursos educacionais.</p>
+          <p>O Google e seus parceiros aplicáveis podem tratar identificadores, dados técnicos do dispositivo e informações de interação para veiculação, medição, prevenção de fraudes e, quando permitido, personalização de anúncios. O aplicativo integra a <strong>Google User Messaging Platform (UMP)</strong> para apresentar solicitações de consentimento e opções de privacidade quando exigidas. A revisão das escolhas de privacidade fica disponível no aplicativo quando aplicável.</p>
+          <p>Para saber mais, consulte a <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Política de Privacidade do Google</a> e as <a href="https://policies.google.com/technologies/ads" rel="noopener noreferrer" target="_blank">informações sobre publicidade do Google</a>.</p>
+        </section>
+        <section id="compartilhamento">
+          <h2>Serviços externos e compartilhamento</h2>
+          <p>O aplicativo utiliza a infraestrutura da Webmatte e de seu provedor de hospedagem para disponibilizar catálogo e imagens. Também se comunica com serviços do Google relacionados à publicidade e ao gerenciamento de consentimento, que podem envolver parceiros de publicidade conforme as políticas e escolhas aplicáveis. A Webmatte não vende diretamente dados pessoais dos alunos. O histórico de conclusão de aulas armazenado em SQLite não é enviado à API de conteúdo.</p>
+        </section>
+        <section id="seguranca">
+          <h2>Segurança, retenção e direitos do usuário</h2>
+          <p>As conexões com a API de conteúdo utilizam HTTPS. O progresso e as imagens baixadas são mantidos no armazenamento local do aplicativo. Nenhuma transmissão ou forma de armazenamento é completamente isenta de riscos. Dados técnicos eventualmente tratados pela infraestrutura de hospedagem ou pelo Google estão sujeitos aos prazos de retenção, controles e políticas dos respectivos prestadores.</p>
+          <p>O usuário pode remover imagens baixadas por meio do próprio aplicativo e gerenciar os dados locais nas configurações do Android. A limpeza dos dados do aplicativo ou sua desinstalação pode excluir o progresso, ressalvados eventuais backups. Preferências de publicidade também podem ser gerenciadas nas configurações do dispositivo, e as escolhas de consentimento podem ser revistas no aplicativo quando essa opção for aplicável.</p>
+          <p>Para solicitar esclarecimentos ou exercer direitos previstos na Lei Geral de Proteção de Dados Pessoais (LGPD) em relação a tratamentos sob responsabilidade da Webmatte, utilize o contato indicado ao final desta política.</p>
+        </section>
+        <section id="publico">
+          <h2>Público e finalidade educacional</h2>
+          <p>O Italiano Per Tutti tem finalidade exclusivamente educacional e busca apoiar o aprendizado autônomo da língua italiana. A utilização do conteúdo não exige cadastro. A configuração de anúncios e de consentimento deve respeitar a faixa etária e o público-alvo declarados na Google Play, bem como as políticas aplicáveis do Google.</p>
+        </section>
+        <section id="atualizacoes">
+          <h2>Atualizações desta política</h2>
+          <p>Esta política poderá ser atualizada para refletir alterações nas funcionalidades, nos serviços externos utilizados ou nas exigências legais. A versão vigente será disponibilizada nesta página, com a respectiva data de atualização.</p>
+        </section>
+        <section id="contato">
+          <h2>Contato</h2>
+          <p>Para dúvidas sobre privacidade ou solicitações relacionadas ao aplicativo, escreva para <a href="mailto:contato@webmatte.com.br">contato@webmatte.com.br</a>.</p>
+          <p class="legal-meta">Última atualização: 14 de novembro de 2026.</p>
+        </section>
+      </article>
+    </div>
+  </main>
+  <footer class="legal-footer">
+    <div class="container"><span>© <span data-current-year="">2026</span> Webmatte Soluções Web.</span><a href="index.html">Voltar ao site</a></div>
+  </footer>
+  <script defer src="js/scripts.js"></script>
+</body>
+</html>
