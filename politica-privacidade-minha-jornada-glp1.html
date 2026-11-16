@@ -1,1 +1,137 @@
-teste
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#087f8c">
+    <meta name="description" content="Política de Privacidade do aplicativo Minha Jornada GLP-1.">
+    <title>Política de Privacidade | Minha Jornada GLP-1</title>
+    <link rel="icon" href="assets/favicon.ico" sizes="any">
+    <link rel="stylesheet" href="css/custom.css">
+    <script>
+        (() => {
+            document.documentElement.classList.add('js');
+            let theme = 'light';
+            try {
+                theme = localStorage.getItem('webmatte-theme-v1') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            } catch (_) {
+                theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+            document.documentElement.dataset.theme = theme;
+        })();
+    </script>
+</head>
+<body class="legal-page" id="top">
+<a class="skip-link" href="#legal-content">Pular para o conteúdo</a>
+
+<header class="site-header">
+    <div class="site-header__inner">
+        <a class="global-brand" href="index.html" aria-label="Webmatte Soluções Web — início">
+            <img class="global-brand__logo" src="assets/img/logo_transparent_background.png" alt="">
+        </a>
+        <span class="legal-context" aria-hidden="true">/</span>
+        <span class="legal-product">Privacidade</span>
+        <a class="header-cta" href="index.html">Voltar ao site</a>
+        <button class="icon-button theme-toggle" type="button" aria-label="Alternar tema claro e escuro" aria-pressed="false">
+            <span class="theme-icon theme-icon--sun"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span>
+            <span class="theme-icon theme-icon--moon"><svg class="icon" viewBox="0 0 24 24"><path d="M20.5 15.2A8.5 8.5 0 0 1 8.8 3.5 8.5 8.5 0 1 0 20.5 15.2Z"/></svg></span>
+        </button>
+    </div>
+</header>
+
+<main id="legal-content">
+    <section class="legal-hero">
+        <div class="legal-hero__mesh" aria-hidden="true"></div>
+        <div class="container legal-hero__inner">
+            <span class="eyebrow"><i></i>Documentação do aplicativo</span>
+            <h1>Política de Privacidade</h1>
+            <p>Como as informações são tratadas durante o uso do aplicativo <strong>Minha Jornada GLP-1</strong>.</p>
+        </div>
+    </section>
+
+    <div class="container legal-grid">
+        <aside class="legal-toc" aria-label="Nesta página">
+            <strong>Nesta página</strong>
+            <nav>
+                <a href="#visao-geral">Visão geral</a>
+                <a href="#dados">Dados e armazenamento</a>
+                <a href="#permissoes">Permissões</a>
+                <a href="#publicidade">Publicidade e compras</a>
+                <a href="#compartilhamento">Compartilhamento</a>
+                <a href="#seguranca">Segurança e direitos</a>
+                <a href="#saude">Saúde e bem-estar</a>
+                <a href="#atualizacoes">Atualizações</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </aside>
+
+        <article class="legal-article">
+            <div class="legal-callout"><strong>Resumo</strong><p>O Minha Jornada GLP-1 permite registrar informações pessoais de acompanhamento, incluindo tratamento, aplicações, peso, hidratação e sintomas. Os registros são armazenados localmente no dispositivo; relatórios e backups podem ser exportados pelo próprio usuário. O aplicativo utiliza Google AdMob para publicidade e poderá oferecer compras pela Google Play. Não é um serviço de atendimento médico.</p></div>
+
+            <section id="visao-geral">
+                <h2>Visão geral</h2>
+                <p>O aplicativo <strong>Minha Jornada GLP-1</strong>, disponibilizado pela Webmatte Soluções Web, foi desenvolvido para auxiliar o acompanhamento pessoal de uma jornada de tratamento, com agenda, lembretes, registros de peso, hidratação, sintomas e progresso.</p>
+                <p>Os registros principais podem ser utilizados sem criação de conta e sem conexão contínua à internet. Recursos como anúncios e compras no aplicativo dependem de serviços externos e de conectividade.</p>
+            </section>
+
+            <section id="dados">
+                <h2>Dados pessoais e armazenamento</h2>
+                <p>O usuário pode inserir informações relacionadas à saúde, como medicamento ou tratamento, doses, datas de aplicação, peso, consumo de água, sintomas e anotações. Esses dados são fornecidos voluntariamente para organizar seu acompanhamento pessoal e podem ser considerados <strong>dados pessoais sensíveis</strong> pela Lei Geral de Proteção de Dados (LGPD).</p>
+                <p>Os registros de acompanhamento são armazenados localmente no dispositivo, utilizando o armazenamento do aplicativo. O aplicativo não oferece, nesta versão, sincronização automática desses registros com servidores próprios da Webmatte.</p>
+                <p>O usuário pode gerar relatórios PDF e arquivos de backup e optar por salvá-los ou compartilhá-los por aplicativos e serviços externos. A partir dessa ação, o tratamento dos arquivos pelo destino escolhido está sujeito às condições e políticas do respectivo serviço. Os arquivos podem conter informações sensíveis; recomenda-se armazená-los com cuidado.</p>
+            </section>
+
+            <section id="permissoes">
+                <h2>Permissões</h2>
+                <p>O aplicativo pode utilizar recursos do Android para notificações de lembretes e para seleção, criação ou compartilhamento de arquivos, conforme a funcionalidade utilizada e as permissões aplicáveis. O funcionamento dos registros pessoais não depende de acesso à localização precisa, contatos, câmera ou microfone.</p>
+                <p>A integração com publicidade e compras pode exigir acesso à internet e utilizar identificadores e informações técnicas disponibilizados pelo sistema operacional e pelos serviços do Google.</p>
+            </section>
+
+            <section id="publicidade">
+                <h2>Publicidade, consentimento e compras</h2>
+                <p>A versão gratuita utiliza o <strong>Google AdMob</strong> para apresentar banners e anúncios intersticiais. O Google e seus parceiros, conforme aplicável, podem tratar identificadores publicitários, endereço IP, informações técnicas e dados de interação com anúncios para entrega, medição, segurança e prevenção de fraudes.</p>
+                <p>O aplicativo utiliza recursos de gerenciamento de consentimento para publicidade quando exigidos, incluindo a <strong>Google User Messaging Platform (UMP)</strong>, conforme disponibilidade e requisitos regionais. As escolhas apresentadas podem variar conforme a localização e a configuração do serviço.</p>
+                <p>O aplicativo poderá oferecer compras únicas, como remoção de anúncios e desbloqueio de recursos Premium, processadas pela <strong>Google Play</strong>. Informações de pagamento são tratadas pela plataforma de compras; a Webmatte não solicita nem armazena diretamente números de cartão de crédito no aplicativo. Informações necessárias à verificação de compras e direitos de acesso podem ser processadas pelos serviços do Google.</p>
+                <p>Consulte a <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidade do Google</a> e as <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">informações sobre publicidade do Google</a>.</p>
+            </section>
+
+            <section id="compartilhamento">
+                <h2>Compartilhamento</h2>
+                <p>A Webmatte não comercializa diretamente os registros pessoais de saúde inseridos pelo usuário. O aplicativo não envia automaticamente esses registros a servidores próprios para sincronização. O compartilhamento de relatórios e backups ocorre por iniciativa do usuário, ao escolher exportar ou compartilhar arquivos.</p>
+                <p>Serviços integrados, como Google AdMob, Google Play e serviços do sistema operacional, podem receber e tratar dados técnicos e transacionais necessários ao funcionamento de suas respectivas funcionalidades, de acordo com suas políticas e configurações aplicáveis.</p>
+            </section>
+
+            <section id="seguranca">
+                <h2>Segurança, retenção e direitos do usuário</h2>
+                <p>Os registros permanecem no armazenamento local do aplicativo enquanto não forem excluídos pelo usuário ou removidos pelas opções do sistema, observadas eventuais cópias de segurança do dispositivo. A exclusão do aplicativo pode apagar registros locais; arquivos PDF e backups exportados devem ser gerenciados separadamente pelo usuário.</p>
+                <p>Recomenda-se proteger o dispositivo com bloqueio de tela e evitar compartilhar arquivos que contenham dados de saúde sem necessidade. Nenhum método de armazenamento ou transmissão é totalmente isento de riscos. Os dados tratados por fornecedores externos seguem suas próprias políticas de retenção e segurança.</p>
+                <p>Para dúvidas ou solicitações relacionadas aos direitos previstos na LGPD e ao tratamento de dados sob responsabilidade da Webmatte, utilize o contato informado nesta política. Pedidos relacionados a dados controlados diretamente por terceiros também podem exigir contato com esses fornecedores.</p>
+            </section>
+
+            <section id="saude">
+                <h2>Saúde e bem-estar</h2>
+                <p>O <strong>Minha Jornada GLP-1</strong> é uma ferramenta de organização e acompanhamento pessoal. Não realiza diagnóstico, prescrição, recomendação de dose ou substituição de consultas, exames ou acompanhamento por profissionais de saúde.</p>
+                <p>Informações registradas, gráficos, lembretes e relatórios são auxiliares e não devem ser utilizados isoladamente para iniciar, interromper ou modificar tratamentos. Em caso de sintomas preocupantes ou dúvidas sobre medicamentos, procure orientação de profissional de saúde habilitado.</p>
+            </section>
+
+            <section id="atualizacoes">
+                <h2>Atualizações desta política</h2>
+                <p>Esta política poderá ser revisada quando forem introduzidas novas funcionalidades ou alteradas as práticas de tratamento de dados. A versão atualizada será disponibilizada nesta página, acompanhada da data de revisão.</p>
+            </section>
+
+            <section id="contato">
+                <h2>Contato</h2>
+                <p>Em caso de dúvidas sobre esta política ou sobre o aplicativo, entre em contato pelo e-mail <a href="mailto:contato@webmatte.com.br">contato@webmatte.com.br</a>.</p>
+                <p class="legal-meta">Última atualização: 16 de novembro de 2026.</p>
+            </section>
+        </article>
+    </div>
+</main>
+
+<footer class="legal-footer">
+    <div class="container"><span>© <span data-current-year>2026</span> Webmatte Soluções Web.</span><a href="index.html">Voltar ao site</a></div>
+</footer>
+<script src="js/scripts.js" defer></script>
+</body>
+</html>
