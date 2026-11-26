@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://webmatte.com.br/minha-jornada-glp1/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image><image:loc>https://webmatte.com.br/minha-jornada-glp1/assets/img/minha-jornada-glp1-tela.webp</image:loc></image:image>
+    <image:image><image:loc>https://webmatte.com.br/minha-jornada-glp1/assets/img/capi-boas-vindas.webp</image:loc></image:image>
+    <image:image><image:loc>https://webmatte.com.br/minha-jornada-glp1/assets/img/capi-agenda.webp</image:loc></image:image>
+    <image:image><image:loc>https://webmatte.com.br/minha-jornada-glp1/assets/img/capi-checklist.webp</image:loc></image:image>
+    <image:image><image:loc>https://webmatte.com.br/minha-jornada-glp1/assets/img/capi-comemorando.webp</image:loc></image:image>
+  </url>
+</urlset>

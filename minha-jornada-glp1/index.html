@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ===== SEO ===== -->
+  <title>Minha Jornada GLP-1 | App para acompanhar o tratamento com GLP-1</title>
+  <meta name="description" content="App grátis para organizar seu tratamento com GLP-1 (semaglutida, tirzepatida, liraglutida): agenda de aplicações, lembretes, registro de peso, hidratação e sintomas, com gráficos. Funciona offline.">
+  <meta name="keywords" content="app GLP-1, aplicativo GLP-1, controle de aplicações semaglutida, diário tirzepatida, lembrete de aplicação caneta, acompanhar peso tratamento, app emagrecimento tratamento, registro de doses GLP-1">
+  <meta name="author" content="Webmatte Soluções Web">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="canonical" href="https://webmatte.com.br/minha-jornada-glp1/">
+  <link rel="alternate" hreflang="pt-BR" href="https://webmatte.com.br/minha-jornada-glp1/">
+  <meta name="theme-color" content="#0C3430">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Webmatte Soluções Web">
+  <meta property="og:title" content="Minha Jornada GLP-1: organize seu tratamento um dia de cada vez">
+  <meta property="og:description" content="Agenda de aplicações, lembretes, peso, hidratação e sintomas em um só app. Grátis na Google Play.">
+  <meta property="og:url" content="https://webmatte.com.br/minha-jornada-glp1/">
+  <meta property="og:image" content="https://webmatte.com.br/minha-jornada-glp1/assets/img/og-minha-jornada-glp1.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Capi, mascote do app Minha Jornada GLP-1, segurando um calendário">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://webmatte.com.br/minha-jornada-glp1/assets/img/og-minha-jornada-glp1.jpg">
+
+  <link rel="icon" href="assets/img/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/icon-192.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="assets/img/capi-boas-vindas.webp" fetchpriority="high">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Caveat:wght@700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://webmatte.com.br/#organization",
+          "name": "Webmatte Soluções Web",
+          "url": "https://webmatte.com.br/",
+          "email": "contato@webmatte.com.br"
+        },
+        {
+          "@type": "MobileApplication",
+          "@id": "https://webmatte.com.br/minha-jornada-glp1/#app",
+          "name": "Minha Jornada GLP-1",
+          "operatingSystem": "Android",
+          "applicationCategory": "HealthApplication",
+          "inLanguage": "pt-BR",
+          "description": "Ferramenta de organização pessoal para quem faz tratamento com medicamentos GLP-1: cadastro de tratamentos, agenda e lembretes de aplicações, registro de peso, hidratação e sintomas, gráficos por período. Registros salvos no aparelho e disponíveis offline.",
+          "image": "https://webmatte.com.br/minha-jornada-glp1/assets/img/minha-jornada-glp1-tela.webp",
+          "url": "https://webmatte.com.br/minha-jornada-glp1/",
+          "installUrl": "https://play.google.com/store/apps/details?id=br.com.webmatte.minhajornadaglp1",
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BRL", "availability": "https://schema.org/InStock" },
+          "author": { "@id": "https://webmatte.com.br/#organization" },
+          "publisher": { "@id": "https://webmatte.com.br/#organization" }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://webmatte.com.br/minha-jornada-glp1/#webpage",
+          "url": "https://webmatte.com.br/minha-jornada-glp1/",
+          "name": "Minha Jornada GLP-1 | App para acompanhar o tratamento com GLP-1",
+          "inLanguage": "pt-BR",
+          "isPartOf": { "@type": "WebSite", "@id": "https://webmatte.com.br/#website", "url": "https://webmatte.com.br/", "name": "Webmatte Soluções Web" },
+          "about": { "@id": "https://webmatte.com.br/minha-jornada-glp1/#app" },
+          "primaryImageOfPage": "https://webmatte.com.br/minha-jornada-glp1/assets/img/og-minha-jornada-glp1.jpg",
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Webmatte", "item": "https://webmatte.com.br/" },
+              { "@type": "ListItem", "position": 2, "name": "Minha Jornada GLP-1", "item": "https://webmatte.com.br/minha-jornada-glp1/" }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://webmatte.com.br/minha-jornada-glp1/#faq",
+          "mainEntity": [
+            { "@type": "Question", "name": "O app Minha Jornada GLP-1 é gratuito?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. O download é gratuito na Google Play e o app exibe anúncios. Relatórios em PDF, backup e restauração e a remoção de anúncios são recursos opcionais pagos, conforme as condições apresentadas no próprio aplicativo." } },
+            { "@type": "Question", "name": "O aplicativo indica doses ou substitui o médico?", "acceptedAnswer": { "@type": "Answer", "text": "Não. O Minha Jornada GLP-1 é uma ferramenta de organização pessoal. Ele não faz diagnóstico, não prescreve medicamentos e não recomenda doses. Siga sempre as orientações do profissional de saúde que acompanha o seu tratamento." } },
+            { "@type": "Question", "name": "Quais medicamentos posso registrar no app?", "acceptedAnswer": { "@type": "Answer", "text": "Você cadastra o tratamento prescrito pelo seu médico, com o nome do medicamento, a dose e a frequência. O app foi pensado para quem usa medicamentos da classe GLP-1, como semaglutida, liraglutida e tirzepatida." } },
+            { "@type": "Question", "name": "O app funciona sem internet?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Os registros ficam armazenados no próprio aparelho e continuam disponíveis offline para as funções locais do app." } },
+            { "@type": "Question", "name": "Meus dados de saúde ficam seguros? Posso apagá-los?", "acceptedAnswer": { "@type": "Answer", "text": "Os registros ficam salvos no seu celular e não são enviados automaticamente aos servidores da Webmatte, nem vendidos. Você pode excluir os registros pelo próprio app ou pelas configurações do sistema. Relatórios em PDF e backups que você exportar ficam onde você escolher e devem ser apagados separadamente." } },
+            { "@type": "Question", "name": "Consigo receber lembretes das aplicações?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Você cadastra o tratamento, consulta a agenda das próximas aplicações e configura lembretes para não esquecer nenhuma dose." } },
+            { "@type": "Question", "name": "Posso levar meus registros para a consulta?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Você pode mostrar os gráficos e o histórico direto no app e, com o recurso opcional de relatórios em PDF, gerar um documento com seus registros para compartilhar com o profissional de saúde." } },
+            { "@type": "Question", "name": "O app está disponível para iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "No momento o Minha Jornada GLP-1 está disponível para Android, na Google Play." } }
+          ]
+        }
+      ]
+    }
+  </script>
+
+  <style>
+    :root{
+      --deep:#0C3430; --deep-2:#124A44; --ink:#123733; --muted:#557570;
+      --green:#0E9F6E; --green-2:#14B886; --mint:#E9FBF4; --mint-2:#D3F5E8;
+      --paper:#FBFEFC; --line:rgba(12,52,48,.10);
+      --capi:#E07A2E; --sun:#FFC83D;
+      --radius:28px;
+      --shadow:0 30px 60px -32px rgba(12,52,48,.38), 0 10px 22px -14px rgba(12,52,48,.18);
+      --font:"Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+      --hand:"Caveat", "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive;
+      --max:1180px;
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{margin:0;font-family:var(--font);color:var(--ink);background:var(--paper);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+    img{max-width:100%;height:auto;display:block}
+    a{color:inherit}
+    h1,h2,h3{line-height:1.08;letter-spacing:-.025em;margin:0;font-weight:800}
+    p{margin:0}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+    .skip{position:absolute;left:-999px;top:12px;background:var(--sun);color:var(--deep);padding:10px 16px;border-radius:10px;font-weight:700;z-index:100}
+    .skip:focus{left:12px}
+    :focus-visible{outline:3px solid var(--sun);outline-offset:3px;border-radius:8px}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--green)}
+    .eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor;box-shadow:0 0 0 4px color-mix(in srgb,currentColor 20%,transparent)}
+    .hand{font-family:var(--hand);font-weight:700;color:var(--green);font-size:1.25em;line-height:.8;letter-spacing:0}
+
+    /* Header */
+    .nav{position:sticky;top:0;z-index:50;background:rgba(251,254,252,.82);backdrop-filter:blur(14px) saturate(150%);-webkit-backdrop-filter:blur(14px) saturate(150%);border-bottom:1px solid transparent;transition:border-color .3s}
+    .nav.solid{border-color:var(--line)}
+    .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px}
+    .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:18px;letter-spacing:-.02em}
+    .brand img{width:40px;height:40px;border-radius:12px;background:var(--mint-2)}
+    .brand b{color:var(--green)}
+    .nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0}
+    .nav ul a{display:block;text-decoration:none;font-weight:600;font-size:15px;padding:8px 14px;border-radius:999px;color:var(--muted);transition:.2s}
+    .nav ul a:hover{color:var(--deep);background:var(--mint)}
+    @media (max-width:900px){.nav ul{display:none}}
+
+    .btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;border-radius:999px;padding:14px 24px;transition:transform .2s, box-shadow .2s, background .2s;font-size:16px;border:0;cursor:pointer;font-family:inherit}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-dark{background:var(--deep);color:#fff;box-shadow:0 14px 28px -14px rgba(12,52,48,.7)}
+    .btn-ghost{color:var(--deep);border:1.5px solid var(--line);background:#fff}
+    .nav .btn{padding:10px 18px;font-size:15px}
+
+    .play{display:inline-flex;align-items:center;gap:14px;background:#0A0A0A;color:#fff;text-decoration:none;padding:12px 24px 12px 18px;border-radius:16px;transition:transform .2s, box-shadow .2s;box-shadow:0 16px 30px -16px rgba(0,0,0,.6)}
+    .play:hover{transform:translateY(-2px)}
+    .play svg{width:28px;height:30px;flex:none}
+    .play small{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.8;line-height:1.2}
+    .play strong{display:block;font-size:20px;line-height:1.15;font-weight:700}
+
+    /* Hero */
+    .hero{position:relative;overflow:hidden;padding:56px 0 90px;isolation:isolate}
+    .hero::before{content:"";position:absolute;z-index:-1;inset:-30% -10% auto 35%;height:900px;border-radius:50%;background:radial-gradient(closest-side,var(--mint-2),transparent 75%)}
+    .hero::after{content:"";position:absolute;z-index:-1;left:-200px;bottom:-200px;width:520px;height:520px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,200,61,.22),transparent 70%)}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+    .hero h1{font-size:clamp(40px,5.6vw,70px);margin:18px 0 22px}
+    .hero h1 .hand{font-size:1.15em;display:inline-block;transform:rotate(-3deg);position:relative}
+    .hero h1 .hand::after{content:"";position:absolute;left:4%;right:2%;bottom:-.08em;height:.12em;border-radius:99px;background:var(--green);opacity:.85;transform:rotate(-1deg)}
+    .lead{font-size:clamp(18px,1.6vw,20px);color:var(--muted);max-width:540px}
+    .cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:32px}
+    .trust{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+    .pill{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;padding:8px 14px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--deep-2)}
+    .pill svg{width:16px;height:16px;color:var(--green)}
+    .hero-art{position:relative;min-height:520px}
+    .hero-card{position:absolute;inset:0 4% 0 30%;border-radius:36px;overflow:hidden;box-shadow:var(--shadow);background:var(--mint);transform:rotate(2deg)}
+    .hero-card img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+    .hero-capi{position:absolute;left:-4%;bottom:-40px;width:58%;filter:drop-shadow(0 24px 30px rgba(12,52,48,.25));animation:bob 5s ease-in-out infinite}
+    .bubble{position:absolute;left:2%;top:6%;background:#fff;border-radius:22px 22px 22px 6px;padding:14px 18px;box-shadow:var(--shadow);font-weight:700;max-width:230px;font-size:15px;line-height:1.35}
+    .bubble small{display:block;color:var(--muted);font-weight:500;font-size:13px;margin-top:2px}
+    @keyframes bob{50%{transform:translateY(-10px) rotate(-1deg)}}
+    @media (max-width:960px){
+      .hero-grid{grid-template-columns:1fr}
+      .hero-art{min-height:440px;max-width:560px;margin:10px auto 0;width:100%}
+    }
+    @media (max-width:520px){.hero-art{min-height:360px}.bubble{display:none}}
+
+    /* Seções */
+    section{scroll-margin-top:84px}
+    .sec{padding:110px 0}
+    .head{max-width:740px;margin-bottom:54px}
+    .head.center{text-align:center;margin-inline:auto}
+    .head h2{font-size:clamp(32px,4.2vw,52px);margin:14px 0 16px}
+    .head p{color:var(--muted);font-size:19px}
+    .head p a{color:var(--green);font-weight:700}
+    .faq details p a{color:var(--green);font-weight:700}
+
+    /* Recursos */
+    .feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .feat{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;transition:transform .3s, box-shadow .3s}
+    .feat:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+    .feat .ico{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;background:var(--mint);color:var(--green);margin-bottom:18px}
+    .feat .ico svg{width:26px;height:26px}
+    .feat h3{font-size:20px;margin-bottom:8px;letter-spacing:-.015em}
+    .feat p{color:var(--muted);font-size:15.5px}
+    .feat.wide{grid-column:span 3;display:flex;gap:24px;align-items:center;background:linear-gradient(110deg,var(--deep),var(--deep-2));color:#fff;border:0}
+    .feat.wide .ico{background:rgba(255,255,255,.12);color:var(--sun);flex:none}
+    .feat.wide p{color:rgba(255,255,255,.75)}
+    .feat.wide .tags{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
+    .feat.wide .tags span{font-size:13px;font-weight:700;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.1)}
+    @media (max-width:960px){.feat-grid{grid-template-columns:1fr 1fr}.feat.wide{grid-column:span 2;flex-wrap:wrap}.feat.wide .tags{margin-left:0}}
+    @media (max-width:600px){.feat-grid{grid-template-columns:1fr}.feat.wide{grid-column:auto}}
+
+    /* Capi */
+    .capi-band{background:var(--mint);border-block:1px solid var(--line)}
+    .capi-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;align-items:center}
+    .capi-grid img{max-width:380px;margin:auto;filter:drop-shadow(0 26px 30px rgba(12,52,48,.2))}
+    .capi-grid h2{font-size:clamp(30px,3.8vw,46px);margin:14px 0 16px}
+    .capi-grid p{color:var(--muted);font-size:18px;margin-bottom:14px}
+    .quote{font-family:var(--hand);font-size:clamp(30px,3.2vw,40px);color:var(--deep);margin-top:10px;line-height:1.1}
+    @media (max-width:860px){.capi-grid{grid-template-columns:1fr;text-align:center}}
+
+    /* Como funciona */
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .step{position:relative;background:#fff;border:1px solid var(--line);border-radius:28px;padding:26px 26px 30px;text-align:center;overflow:hidden}
+    .step .n{position:absolute;top:18px;left:22px;font-weight:800;font-size:15px;color:var(--green);background:var(--mint);width:36px;height:36px;border-radius:50%;display:grid;place-items:center}
+    .step img{width:190px;height:190px;object-fit:contain;margin:0 auto 14px}
+    .step h3{font-size:21px;margin-bottom:8px}
+    .step p{color:var(--muted);font-size:15.5px}
+    @media (max-width:900px){.steps{grid-template-columns:1fr}}
+
+    /* GLP-1 */
+    .info{background:linear-gradient(180deg,var(--paper),var(--mint) 70%,var(--paper))}
+    .info-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:start}
+    .prose p{font-size:17.5px;color:#2C4C47;margin-bottom:16px}
+    .prose strong{color:var(--deep)}
+    .callout{background:#fff;border:1px solid var(--line);border-radius:26px;padding:28px;box-shadow:var(--shadow)}
+    .callout h3{font-size:20px;display:flex;align-items:center;gap:10px;margin-bottom:14px}
+    .callout h3 svg{width:24px;height:24px;color:var(--capi)}
+    .callout ul{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+    .callout li{display:flex;gap:10px;font-size:15.5px;color:#2C4C47;line-height:1.5}
+    .callout li::before{content:"";flex:none;width:20px;height:20px;margin-top:2px;border-radius:50%;background:var(--green) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center/12px no-repeat}
+    .src{font-size:13px;color:var(--muted);margin-top:16px}
+    @media (max-width:900px){.info-grid{grid-template-columns:1fr;gap:32px}}
+
+    /* Privacidade */
+    .privacy{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .priv{border-radius:24px;padding:28px;background:var(--deep);color:#fff;position:relative;overflow:hidden}
+    .priv::after{content:"";position:absolute;right:-40px;top:-40px;width:130px;height:130px;border-radius:50%;background:var(--c);opacity:.25}
+    .priv svg{width:30px;height:30px;color:var(--c);margin-bottom:16px}
+    .priv h3{font-size:20px;margin-bottom:8px}
+    .priv p{color:rgba(255,255,255,.72);font-size:15.5px}
+    @media (max-width:900px){.privacy{grid-template-columns:1fr}}
+
+    /* FAQ */
+    .faq{max-width:860px;margin:0 auto}
+    .faq details{background:#fff;border:1px solid var(--line);border-radius:20px;margin-bottom:12px}
+    .faq details[open]{box-shadow:var(--shadow)}
+    .faq summary{list-style:none;cursor:pointer;padding:22px 64px 22px 26px;font-weight:700;font-size:18px;position:relative}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";position:absolute;right:22px;top:50%;transform:translateY(-50%);width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:var(--mint);color:var(--green);font-size:22px;transition:transform .25s, background .25s}
+    .faq details[open] summary::after{transform:translateY(-50%) rotate(45deg);background:var(--sun);color:var(--deep)}
+    .faq details p{padding:0 26px 24px;color:var(--muted);font-size:16.5px}
+
+    /* CTA final */
+    .final{padding:0 0 100px}
+    .final-box{position:relative;overflow:hidden;border-radius:40px;background:linear-gradient(120deg,var(--deep) 0%,#0F5C4B 60%,var(--green) 130%);color:#fff;padding:clamp(40px,6vw,72px);display:grid;grid-template-columns:1.3fr .7fr;gap:30px;align-items:center;isolation:isolate}
+    .final-box::before{content:"";position:absolute;z-index:-1;right:-120px;bottom:-160px;width:520px;height:520px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,200,61,.35),transparent 70%)}
+    .final-box h2{font-size:clamp(32px,4.4vw,54px);margin-bottom:16px}
+    .final-box p{color:rgba(255,255,255,.8);font-size:19px;margin-bottom:30px;max-width:560px}
+    .final-box img{width:100%;max-width:320px;margin:auto;filter:drop-shadow(0 26px 30px rgba(0,0,0,.35))}
+    @media (max-width:860px){.final-box{grid-template-columns:1fr;text-align:center}.final-box p{margin-inline:auto}.final-box img{max-width:220px}}
+
+    /* Aviso + rodapé */
+    .disclaimer{max-width:900px;margin:0 auto 60px;padding:22px 26px;border-radius:20px;border:1px dashed rgba(224,122,46,.5);background:#FFF8F1;color:#6A4A2E;font-size:15px;display:flex;gap:14px}
+    .disclaimer svg{flex:none;width:24px;height:24px;color:var(--capi);margin-top:2px}
+    footer{border-top:1px solid var(--line);padding:40px 0 110px;color:var(--muted);font-size:15px}
+    footer .wrap{display:flex;flex-wrap:wrap;gap:20px 40px;justify-content:space-between}
+    footer nav{display:flex;flex-wrap:wrap;gap:8px 18px}
+    footer a{font-weight:600;text-decoration:none}
+    footer a:hover{color:var(--deep);text-decoration:underline}
+    footer strong{color:var(--deep);display:block;margin-bottom:6px}
+
+    .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.8,.2,1), transform .8s cubic-bezier(.2,.8,.2,1)}
+    .reveal.in{opacity:1;transform:none}
+    .no-js .reveal{opacity:1;transform:none}
+    @media (prefers-reduced-motion:reduce){
+      *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+      .reveal{opacity:1;transform:none}
+    }
+  </style>
+</head>
+<body class="no-js">
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Minha Jornada GLP-1 – início">
+      <img src="assets/img/icon-192.png" alt="" width="40" height="40">
+      <span>Minha Jornada <b>GLP-1</b></span>
+    </a>
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#o-que-e-glp1">O que é GLP-1</a></li>
+        <li><a href="#perguntas-frequentes">Dúvidas</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-dark" href="https://play.google.com/store/apps/details?id=br.com.webmatte.minhajornadaglp1" target="_blank" rel="noopener" data-play="nav">Baixar grátis</a>
+  </div>
+</header>
+
+<main id="conteudo">
+  <!-- Hero -->
+  <section class="hero" id="inicio" aria-labelledby="h1">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">App para tratamento com GLP-1</span>
+        <h1 id="h1">Seu tratamento com GLP-1 organizado, <span class="hand">um dia de cada vez.</span></h1>
+        <p class="lead">Registre aplicações e doses, receba lembretes, acompanhe peso, hidratação e sintomas e veja sua evolução em gráficos. Tudo em um só lugar, com a Capi do seu lado.</p>
+        <div class="cta">
+          <a class="play" href="https://play.google.com/store/apps/details?id=br.com.webmatte.minhajornadaglp1" target="_blank" rel="noopener" data-play="hero" aria-label="Baixar Minha Jornada GLP-1 na Google Play (abre em nova aba)">
+            <svg viewBox="0 0 28 30" aria-hidden="true"><path d="M1.2.6 15.6 15 1.2 29.4C.8 29.1.5 28.5.5 27.8V2.2C.5 1.5.8.9 1.2.6Z" fill="#00D7FE"/><path d="M20.4 19.8 15.6 15l4.8-4.8 5.8 3.3c1.6.9 1.6 2.4 0 3.3l-5.8 3Z" fill="#FFCE00"/><path d="M20.4 19.8 15.6 15 1.2 29.4c.5.5 1.4.6 2.4 0l16.8-9.6Z" fill="#FF3A44"/><path d="M20.4 10.2 3.6.6C2.6 0 1.7.1 1.2.6L15.6 15l4.8-4.8Z" fill="#00F076"/></svg>
+            <span><small>Disponível no</small><strong>Google Play</strong></span>
+          </a>
+          <a class="btn btn-ghost" href="#recursos">Ver recursos</a>
+        </div>
+        <div class="trust">
+          <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Download grátis</span>
+          <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Funciona offline</span>
+          <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Tema claro e escuro</span>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-card">
+          <img src="assets/img/minha-jornada-glp1-tela.webp" width="495" height="960"
+               alt="Tela inicial do app Minha Jornada GLP-1 com próxima aplicação, registro de peso e hidratação">
+        </div>
+        <img class="hero-capi" src="assets/img/capi-boas-vindas.webp" width="700" height="700" fetchpriority="high"
+             alt="Capi, a capivara mascote do app, de jaleco e estetoscópio, dando boas-vindas">
+        <div class="bubble" aria-hidden="true">Oi! Eu sou a Capi 🌿<small>Vou te acompanhar em cada etapa.</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recursos -->
+  <section class="sec" id="recursos" aria-labelledby="t-rec" style="padding-top:60px">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">Recursos</span>
+        <h2 id="t-rec">Tudo o que você precisa para acompanhar o tratamento</h2>
+        <p>Menos anotações soltas e lembranças de cabeça. Mais clareza sobre a sua rotina e sobre como seu corpo está respondendo.</p>
+      </div>
+      <div class="feat-grid">
+        <article class="feat reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18M8 15h2M14 15h2"/></svg></div>
+          <h3>Agenda de aplicações</h3>
+          <p>Cadastre seu tratamento com medicamento, dose e frequência e veja quando é a próxima aplicação.</p>
+        </article>
+        <article class="feat reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg></div>
+          <h3>Lembretes</h3>
+          <p>Configure avisos para não esquecer nenhuma dose e manter a regularidade combinada com seu médico.</p>
+        </article>
+        <article class="feat reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 9a5 5 0 0 1 8 0l-3 3"/><circle cx="12" cy="12" r=".6" fill="currentColor"/></svg></div>
+          <h3>Registro de peso</h3>
+          <p>Anote seu peso e acompanhe o histórico completo, sem planilhas nem papéis perdidos.</p>
+        </article>
+        <article class="feat reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.7S5 10.4 5 15a7 7 0 0 0 14 0c0-4.6-7-12.3-7-12.3Z"/></svg></div>
+          <h3>Hidratação diária</h3>
+          <p>Registre a água que você bebe ao longo do dia e crie um hábito importante durante o tratamento.</p>
+        </article>
+        <article class="feat reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8z"/><path d="M3.5 12h4l2-3 3 6 2-3h6"/></svg></div>
+          <h3>Diário de sintomas</h3>
+          <p>Anote como você se sente após cada aplicação. Informação valiosa para conversar na próxima consulta.</p>
+        </article>
+        <article class="feat reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 6-7"/></svg></div>
+          <h3>Gráficos por período</h3>
+          <p>Visualize seus registros em gráficos e compare semanas e meses para enxergar sua evolução.</p>
+        </article>
+        <article class="feat wide reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15h6M9 18h4"/></svg></div>
+          <div>
+            <h3>Recursos extras opcionais</h3>
+            <p>Gere relatórios em PDF para levar à consulta, faça backup e restauração dos seus dados ou remova os anúncios.</p>
+          </div>
+          <div class="tags"><span>Relatório PDF</span><span>Backup</span><span>Sem anúncios</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Capi -->
+  <section class="sec capi-band" aria-labelledby="t-capi" style="padding:80px 0">
+    <div class="wrap capi-grid">
+      <img class="reveal" src="assets/img/capi-checklist.webp" width="700" height="700" loading="lazy" decoding="async"
+           alt="Capi segurando uma prancheta com itens marcados como concluídos">
+      <div class="reveal">
+        <span class="eyebrow">Conheça a Capi</span>
+        <h2 id="t-capi">Uma companhia leve para uma jornada que pede constância</h2>
+        <p>Tratamentos longos ficam mais fáceis quando a rotina é simples. A Capi, nossa capivara de jaleco, aparece no app para lembrar, comemorar cada registro e deixar o acompanhamento mais leve.</p>
+        <p>Escolha entre tema claro, escuro ou automático e deixe o app com a sua cara.</p>
+        <p class="quote">“Sua jornada continua!”</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Como funciona -->
+  <section class="sec" id="como-funciona" aria-labelledby="t-como">
+    <div class="wrap">
+      <div class="head center reveal">
+        <span class="eyebrow">Como funciona</span>
+        <h2 id="t-como">Comece a usar em poucos minutos</h2>
+        <p>Sem cadastro complicado. Baixe, configure seu tratamento e pronto.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <span class="n">1</span>
+          <img src="assets/img/capi-agenda.webp" width="700" height="756" loading="lazy" decoding="async" alt="Capi apontando para um calendário">
+          <h3>Cadastre seu tratamento</h3>
+          <p>Informe o medicamento, a dose e a frequência prescritos pelo seu médico e ative os lembretes.</p>
+        </div>
+        <div class="step reveal">
+          <span class="n">2</span>
+          <img src="assets/img/capi-checklist.webp" width="700" height="700" loading="lazy" decoding="async" alt="Capi com uma prancheta de registros">
+          <h3>Registre o dia a dia</h3>
+          <p>Marque cada aplicação e anote peso, água e sintomas em poucos toques.</p>
+        </div>
+        <div class="step reveal">
+          <span class="n">3</span>
+          <img src="assets/img/capi-comemorando.webp" width="700" height="700" loading="lazy" decoding="async" alt="Capi comemorando com os braços para cima">
+          <h3>Acompanhe sua evolução</h3>
+          <p>Veja gráficos e histórico e leve informações organizadas para a próxima consulta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- O que é GLP-1 -->
+  <section class="sec info" id="o-que-e-glp1" aria-labelledby="t-glp">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">Informação</span>
+        <h2 id="t-glp">O que são os medicamentos GLP-1?</h2>
+        <p>Entenda o básico sobre a classe de medicamentos que o app ajuda você a acompanhar.</p>
+      </div>
+      <div class="info-grid">
+        <div class="prose reveal">
+          <p>O <strong>GLP-1</strong> (peptídeo semelhante ao glucagon tipo 1) é um hormônio produzido naturalmente pelo intestino. Os medicamentos chamados <strong>agonistas do receptor de GLP-1</strong> imitam a ação desse hormônio e são indicados para o tratamento do <strong>diabetes tipo 2</strong> e, em alguns casos, da <strong>obesidade</strong>.</p>
+          <p>Fazem parte dessa classe substâncias como <strong>semaglutida, liraglutida, dulaglutida, exenatida, tirzepatida e lixisenatida</strong>. Muitas delas são aplicadas com canetas injetáveis, por isso ficaram conhecidas popularmente como “canetas emagrecedoras”.</p>
+          <p>Desde junho de 2025, a <strong>Anvisa</strong> exige que a receita desses medicamentos seja emitida em duas vias e que uma delas fique retida na farmácia. A receita vale por até 90 dias. A medida busca reduzir o uso sem acompanhamento profissional e os eventos adversos associados.</p>
+          <p>Como o tratamento costuma ser contínuo, com ajustes de dose ao longo do tempo, <strong>manter registros organizados</strong> de aplicações, peso e sintomas ajuda você e o profissional de saúde a acompanhar a evolução com mais segurança.</p>
+        </div>
+        <aside class="callout reveal" aria-labelledby="t-uso">
+          <h3 id="t-uso"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.8 20 6v5.7c0 4.7-3.2 8-8 9.5-4.8-1.5-8-4.8-8-9.5V6l8-3.2Z"/><path d="m8.7 12 2.1 2.1 4.7-4.7"/></svg>Uso responsável</h3>
+          <ul>
+            <li>Use somente com prescrição e acompanhamento de um profissional de saúde.</li>
+            <li>Não altere doses nem intervalos por conta própria.</li>
+            <li>Evite medicamentos de origem desconhecida ou versões manipuladas sem garantia de qualidade.</li>
+            <li>Relate ao seu médico qualquer efeito incomum. Anotar os sintomas no app ajuda nessa conversa.</li>
+          </ul>
+          <p class="src">Fontes: Anvisa (RDC 471/2021, atualizada em 2025) e Conselho Federal de Farmácia.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacidade -->
+  <section class="sec" aria-labelledby="t-priv" style="padding-top:40px">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">Privacidade e praticidade</span>
+        <h2 id="t-priv">Seus registros, sempre à mão</h2>
+        <p>Dados de saúde são sensíveis, e o app foi pensado para isso. Veja todos os detalhes na <a href="https://webmatte.com.br/politica-privacidade-minha-jornada-glp1.html">política de privacidade</a>.</p>
+      </div>
+      <div class="privacy">
+        <div class="priv reveal" style="--c:#14B886">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M11.5 18.5h1"/></svg>
+          <h3>Salvo no seu aparelho</h3>
+          <p>Os registros ficam armazenados no próprio celular e não são sincronizados com os servidores da Webmatte.</p>
+        </div>
+        <div class="priv reveal" style="--c:#FFC83D">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l20 20M8.5 16.5a5 5 0 0 1 7 0M5 13a10 10 0 0 1 5.2-2.8M19 13a10 10 0 0 0-2.1-1.6M12 20h.01"/></svg>
+          <h3>Funciona offline</h3>
+          <p>Registre aplicações e acompanhe seu histórico mesmo sem internet.</p>
+        </div>
+        <div class="priv reveal" style="--c:#E07A2E">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.8 20 6v5.7c0 4.7-3.2 8-8 9.5-4.8-1.5-8-4.8-8-9.5V6l8-3.2Z"/></svg>
+          <h3>Você no controle</h3>
+          <p>Seus registros de saúde não são vendidos. Você pode apagá-los pelo próprio app e decide com quem compartilhar relatórios e backups.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec" id="perguntas-frequentes" aria-labelledby="t-faq" style="padding-top:20px">
+    <div class="wrap">
+      <div class="head center reveal">
+        <span class="eyebrow">Dúvidas</span>
+        <h2 id="t-faq">Perguntas frequentes</h2>
+      </div>
+      <div class="faq reveal">
+        <details open><summary>O app Minha Jornada GLP-1 é gratuito?</summary><p>Sim. O download é gratuito na Google Play e o app exibe anúncios. Relatórios em PDF, backup e restauração e a remoção de anúncios são recursos opcionais pagos, conforme as condições apresentadas no próprio aplicativo.</p></details>
+        <details><summary>O aplicativo indica doses ou substitui o médico?</summary><p>Não. O Minha Jornada GLP-1 é uma ferramenta de organização pessoal. Ele não faz diagnóstico, não prescreve medicamentos e não recomenda doses. Siga sempre as orientações do profissional de saúde que acompanha o seu tratamento.</p></details>
+        <details><summary>Quais medicamentos posso registrar no app?</summary><p>Você cadastra o tratamento prescrito pelo seu médico, com o nome do medicamento, a dose e a frequência. O app foi pensado para quem usa medicamentos da classe GLP-1, como semaglutida, liraglutida e tirzepatida.</p></details>
+        <details><summary>O app funciona sem internet?</summary><p>Sim. Os registros ficam armazenados no próprio aparelho e continuam disponíveis offline para as funções locais do app.</p></details>
+        <details><summary>Meus dados de saúde ficam seguros? Posso apagá-los?</summary><p>Os registros ficam salvos no seu celular e não são enviados automaticamente aos servidores da Webmatte, nem vendidos. Você pode excluir os registros pelo próprio app ou pelas configurações do sistema. Relatórios em PDF e backups que você exportar ficam onde você escolher e devem ser apagados separadamente. Saiba mais na <a href="https://webmatte.com.br/politica-privacidade-minha-jornada-glp1.html">política de privacidade</a>.</p></details>
+        <details><summary>Consigo receber lembretes das aplicações?</summary><p>Sim. Você cadastra o tratamento, consulta a agenda das próximas aplicações e configura lembretes para não esquecer nenhuma dose.</p></details>
+        <details><summary>Posso levar meus registros para a consulta?</summary><p>Sim. Você pode mostrar os gráficos e o histórico direto no app e, com o recurso opcional de relatórios em PDF, gerar um documento com seus registros para compartilhar com o profissional de saúde.</p></details>
+        <details><summary>O app está disponível para iPhone?</summary><p>No momento o Minha Jornada GLP-1 está disponível para Android, na Google Play.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA final -->
+  <section class="final" aria-labelledby="t-final">
+    <div class="wrap">
+      <div class="final-box reveal">
+        <div>
+          <h2 id="t-final">Mais organização, mais tranquilidade na sua jornada.</h2>
+          <p>Baixe grátis o Minha Jornada GLP-1 e tenha aplicações, peso, hidratação e sintomas sempre organizados.</p>
+          <a class="play" href="https://play.google.com/store/apps/details?id=br.com.webmatte.minhajornadaglp1" target="_blank" rel="noopener" data-play="final" aria-label="Baixar Minha Jornada GLP-1 na Google Play (abre em nova aba)">
+            <svg viewBox="0 0 28 30" aria-hidden="true"><path d="M1.2.6 15.6 15 1.2 29.4C.8 29.1.5 28.5.5 27.8V2.2C.5 1.5.8.9 1.2.6Z" fill="#00D7FE"/><path d="M20.4 19.8 15.6 15l4.8-4.8 5.8 3.3c1.6.9 1.6 2.4 0 3.3l-5.8 3Z" fill="#FFCE00"/><path d="M20.4 19.8 15.6 15 1.2 29.4c.5.5 1.4.6 2.4 0l16.8-9.6Z" fill="#FF3A44"/><path d="M20.4 10.2 3.6.6C2.6 0 1.7.1 1.2.6L15.6 15l4.8-4.8Z" fill="#00F076"/></svg>
+            <span><small>Disponível no</small><strong>Google Play</strong></span>
+          </a>
+        </div>
+        <img src="assets/img/capi-comemorando.webp" width="700" height="700" loading="lazy" decoding="async" alt="Capi comemorando">
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <p class="disclaimer" role="note">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+      <span><strong>Aviso importante:</strong> o Minha Jornada GLP-1 é uma ferramenta de organização pessoal. Não faz diagnóstico, não prescreve medicamentos, não recomenda doses e não substitui a avaliação e o acompanhamento de profissionais de saúde. Siga sempre as orientações do seu médico.</span>
+    </p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <strong>Minha Jornada GLP-1</strong>
+      © <span id="ano">2026</span> <a href="https://webmatte.com.br/">Webmatte Soluções Web</a> · <a href="https://webmatte.com.br/politica-privacidade-minha-jornada-glp1.html">Política de privacidade</a> · <a href="mailto:contato@webmatte.com.br">contato@webmatte.com.br</a>
+    </div>
+    <div>
+      <strong>Outros apps Webmatte</strong>
+      <nav aria-label="Outros aplicativos">
+        <a href="/aprender-libras/">Aprender LIBRAS</a>
+        <a href="/consulta-cep/">Consulta CEP</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.body.classList.remove('no-js');
+  document.getElementById('ano').textContent = new Date().getFullYear();
+  var nav = document.querySelector('.nav');
+  var onScroll = function(){ nav.classList.toggle('solid', window.scrollY > 10); };
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+  var els = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){ io.observe(el); });
+  } else { els.forEach(function(el){ el.classList.add('in'); }); }
+  // Cliques para a loja (evento GA4, se instalado)
+  document.querySelectorAll('a[data-play]').forEach(function(a){
+    a.addEventListener('click', function(){ if (typeof gtag === 'function') gtag('event','click_google_play',{app_name:'minha-jornada-glp1',position:a.dataset.play}); });
+  });
+</script>
+</body>
+</html>
