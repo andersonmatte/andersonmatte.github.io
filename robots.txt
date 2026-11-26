@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://webmatte.com.br/sitemap.xml
 Sitemap: https://webmatte.com.br/aprender-libras/sitemap.xml
 Sitemap: https://webmatte.com.br/consulta-cep/sitemap.xml
