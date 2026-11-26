@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://webmatte.com.br/aprender-libras/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image><image:loc>https://webmatte.com.br/aprender-libras/assets/img/colecao-aprenda-libras.webp</image:loc></image:image>
+    <image:image><image:loc>https://webmatte.com.br/aprender-libras/assets/img/libras-para-todos.webp</image:loc></image:image>
+    <image:image><image:loc>https://webmatte.com.br/aprender-libras/assets/img/a-jornada-de-gonzo.webp</image:loc></image:image>
+    <image:image><image:loc>https://webmatte.com.br/aprender-libras/assets/img/soletrando-libras.webp</image:loc></image:image>
+  </url>
+</urlset>
